@@ -704,7 +704,7 @@
 <p>如果觉得本指南对你有一些帮助，欢迎赞助我一杯奶茶💰，我也可以为你解答相关问题。</p>
 <details class="gray" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>打赏 </summary>
               <div class='content'>
-              <div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">微信</a></li><li class="tab"><a class="#first-unique-name-2">支付宝</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p> <img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image@main/wechat-qrcode.webp" alt="qrcode-wechat"></p></div><div class="tab-pane" id="first-unique-name-2"><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image@main/alipay-qrcode.webp" alt="qrcode-alipay"></p></div></div></div>
+              <div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">微信</a></li><li class="tab"><a class="#first-unique-name-2">支付宝</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p> <img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image@main/qrcode-wechat.webp" alt="qrcode-wechat"></p></div><div class="tab-pane" id="first-unique-name-2"><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image@main/qrcode-alipay.webp" alt="qrcode-alipay"></p></div></div></div>
               </div>
             </details>
 ]]></content>
