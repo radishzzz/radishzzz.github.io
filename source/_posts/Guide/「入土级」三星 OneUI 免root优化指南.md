@@ -2,7 +2,7 @@
 title: 「入土级」三星 OneUI 优化完全指南
 excerpt: 一份指南，带你从入门到入土。
 categories:
-  - 教程
+  - Guide
 tags:
   - Android
   - Samsung
