@@ -1,0 +1,137 @@
+# Site 网站设置
+title: radishzz's blog
+subtitle: # 副标题
+description: # 简要描述，通常用于 SEO 和 meta 标签中
+keywords: # 关键词列表，有助于 SEO
+author: radishzz # 作者姓名
+language: en # 语言设置
+timezone: # 时区设置
+
+# URL
+url: http://radishzz.cc # 网站链接
+permalink: posts/:abbrlink/ # 博客文章的永久链接格式“年/月/日/标题格式”
+permalink_defaults: # 永久链接的默认参数
+pretty_urls: # 设置 URL 美化选项
+  trailing_index: true # 是否在 URL 中出现 index.html 后缀
+  trailing_html: true # S是否在 URL 中出现 .html 后缀
+
+# Directory 目录设置
+source_dir: source # 源码文件所在的目录
+public_dir: public # 生成的静态网页文件所在目录
+tag_dir: tags # 标签页面的生成目录
+archive_dir: archives # 归档页面的生成目录
+category_dir: categories # 分类页面的生成目录
+code_dir: downloads/code # 代码下载目录
+i18n_dir: :lang # 国际化文件目录
+skip_render: # 跳过渲染的文件或文件夹
+
+# Writing 写作设置
+new_post_name: :title.md # 新文章的默认文件名格式
+default_layout: post # 新文章的默认布局
+titlecase: false # 是否将文章标题转换为大小写
+external_link: #  控制外部链接的设置
+  enable: true # 外部链接是否在新标签页打开
+  field: site # 外部链接应用范围
+  exclude: 'https://status.radishzz.cc/' # 不使用外部链接打开的域名
+filename_case: 0 # 文件名大小写规则
+render_drafts: false # 是否渲染草稿文章
+post_asset_folder: false # 是否为每篇文章创建资源文件夹
+relative_link: false # 是否使用相对路径链接
+future: true # 是否显示未来发布的文章
+syntax_highlighter: highlight.js # 代码高亮器的选择
+highlight: # 代码高亮相关配置
+  line_number: true # 显示行号
+  auto_detect: false # 自动检测代码语言
+  tab_replace: '' # 替换 tab 字符
+  wrap: true # 是否换行
+  hljs: false # 是否使用 highlight.js
+prismjs: # 代码高亮器的配置
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting 首页配置
+index_generator:
+  path: '' # 首页路径，默认是根目录
+  per_page: 10 # 每页显示的文章数量
+  order_by: -date # 按日期排序
+
+# Category & Tag 分类和标签设置
+default_category: uncategorized # 默认分类名称
+category_map: # 用于映射分类和标签的名称，通常用于多语言站点
+tag_map:
+
+# Metadata elements 元数据元素
+meta_generator: true # 是否生成包含 Hexo 版本信息的 meta 生成器标签
+
+# Date / Time format 日期/时间格式
+date_format: YYYY-MM-DD # 日期格式
+time_format: HH:mm:ss # 时间格式
+updated_option: 'date' # 设置更新时间格式
+
+# Pagination 分页设置
+per_page: 10 # 每页显示的文章数量
+pagination_dir: page # 分页目录
+
+# Include / Exclude file(s) 包含/排除的文件
+include: # 包含的
+exclude: # 排除的
+ignore: # 忽略的
+
+# Extensions 口站
+theme: redefine
+
+# Deployment 部署设置
+deploy: # 部署
+- type: git
+  repo: git@github.com:radishzzz/radishzzz.github.io.git
+  branch: main
+- type: baidu_url_submitter
+  
+# hexo-abbrlink 永久链接生成
+abbrlink:
+  alg: crc32 # 支持 crc16（默认）和 crc32
+  rep: hex # 支持 dec（默认）和 hex
+  
+# hexo-all-minifier 压缩优化
+all_minifier: true # 是否启用站点文件压缩优化
+
+# hexo-auto-category 自动生成目录
+auto_category:
+ enable: true # 是否启用
+ depth: 1 # 目录分类长度
+
+# hexo-filter-nofollow 为外链添加 nofollow 属性
+nofollow:
+  enable: true # 是否启用
+  field: site # 作用范围 site 或 post
+  exclude: # 排除域名
+    - https://radishzz.cc
+    - https://www.radishzz.cc
+
+# hexo-generator-sitemap 生成站点地图
+sitemap:
+  path: sitemap.xml # 站点地图路径
+  
+# hexo-generator-baidu-sitemap 生成百度站点地图
+baidusitemap:
+  path: baidusitemap.xml # 百度站点地图路径
+
+# baidu_url_submit 主动推送链接至百度
+baidu_url_submit:
+  count: 1000 # 提交最新链接的数量
+  host: radishzz.cc # 百度站长平台中的域名
+  token: EWWpDlpbhRwLFyk6 # 推送密钥
+  path: baidu_urls.txt ## 保存链接的文档地址
+
+# hexo-native-lazy-load 懒加载，不影响rss订阅的图片显示
+lazy_load:
+  enable: true
+
+# hexo-generator-feed RSS 订阅生成
+feed:
+  enable: true # 是否启用
+  type: atom # 生成的 RSS 类型
+  path: atom.xml # RSS 文件的路径
+  limit: false # 是否限制生成的条目
+  template: ./source/custom.xml # 自定义模版路径
