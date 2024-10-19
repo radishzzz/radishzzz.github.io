@@ -698,7 +698,7 @@
 <h6 id="ACL4SSR-广告拦截规则"><a href="#ACL4SSR-广告拦截规则" class="headerlink" title="ACL4SSR 广告拦截规则"></a>ACL4SSR 广告拦截规则</h6><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-27.webp" alt="图片"><br>进入<a class="link"   href="https://acl4ssr-sub.github.io/" >订阅转换页 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，如图进行「订阅链接转换」。原理是在你的 VPN  订阅链接里添加 ACL4SSR 广告拦截规则，它仅在代理开启时生效。</p>
 <hr>
 <h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-28.webp" alt="图片">  </p>
-<p>刚开始写这篇文章，只是想在 OneUI 6.1 推送更新之前，捋一遍新系统的设置流程，方便自己刷机后进行设置恢复。顺便整合一下自己之前的文章，毕竟都是关于 OneUI 的。结果花了好几天，写完一看都 1w+ 字数了，毕业论文都没这么长。所以就整理成「优化指南」分享出来，方便各位网友进行参考。不出意外的话，过几天本篇指南就可以在 Google 和百度上搜到了。</p>
+<p>刚开始写这篇文章，只是想在 OneUI 6.1 推送更新之前，捋一遍新系统的设置流程，方便自己刷机后进行设置恢复。顺便整合一下自己之前的文章，毕竟都是关于 OneUI 的。结果花了好几天，写完一看都 1w+ 字数了，毕业论文都没这么长。所以就整理成「优化指南」分享出来，方便各位网友进行参考。</p>
 <p>那么关于整篇指南的主旨，想要「提升设备的续航与流畅度」，其实并不需要完成文中那么多花里胡哨的操作。如果你是以「玩机」为目的，那你确实可以全部跟着做一遍。但是对于大多数人来说，「日用」才是关键，这些操作可能已经远远超纲了。通常只需要完成「应用安装篇」和「系统设置篇」就可以达到很不错的续航和流畅度了，不用再折腾禁用什么的，这些收益已经不大了（类似<a class="link"   href="https://baike.baidu.com/item/%E8%BE%B9%E9%99%85%E6%95%88%E5%BA%94/555439" >边际效应 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>）。</p>
 <p><strong>最后给六个篇章的「流畅省电」效果排个名吧。</strong><br><strong>系统设置篇 &gt; 应用安装篇 &gt; 双清刷机篇 &gt; shizuku 应用篇 ≈ Lycan 禁用篇 &gt; Adhell3 广告拦截篇</strong></p>
 <p>如果觉得本指南对你有一些帮助，欢迎赞助我一杯奶茶💰，我也可以为你解答相关问题。</p>
