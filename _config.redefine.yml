@@ -8,9 +8,9 @@ info:
 
 # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 defaults:
-  favicon: https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image@main/profile-graph.webp
+  favicon: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
   logo:
-  avatar: https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image@main/profile-graph.webp
+  avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -76,8 +76,8 @@ home_banner:
   enable: true
   style: fixed
   image:
-    light: https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image@main/wallpaper-light.webp
-    dark: https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image@main/wallpaper-dark.webp
+    light: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-wallpaper-light.webp
+    dark: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-wallpaper-dark.webp
   title: radishzz's blog
   subtitle:
     text: []
@@ -106,6 +106,7 @@ home_banner:
     enable: true
     style: default
     links:
+      github: https://github.com/radishzzz
       telegram: https://t.me/radishzz
       [fontawesome fa-solid fa-square-rss]: /atom.xml
     qrs:

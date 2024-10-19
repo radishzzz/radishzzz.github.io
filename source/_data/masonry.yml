@@ -1,11 +1,7 @@
-- image: https://cdn.jsdelivr.net/gh/radishzzz/jsDelivr-image@main/001-hello-world-01.webp
-  title: Light mode wallpaper
-  description: From BangJoy
+- image: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-wallpaper-light.webp
+  title:
+  description:
  
-- image: https://cdn.jsdelivr.net/gh/radishzzz/jsDelivr-image@main/001-hello-world-02.webp
-  title: Dark mode wallpaper
-  description: From BangJoy
-
-- image: https://cdn.jsdelivr.net/gh/radishzzz/jsDelivr-image@main/001-hello-world-03.webp
-  title: Wallpaper
-  description: From BangJoy
+- image: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-wallpaper-dark.webp
+  title:
+  description:

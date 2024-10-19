@@ -8,8 +8,7 @@ tags:
   - Samsung
   - OneUI
 abbrlink: 384776b2
-thumbnail: >-
-  https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image@main/002-samsung-oneui-26.webp
+thumbnail: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-28.webp
 date: 2024-03-31 00:00:00
 ---
 #### 前言
@@ -26,7 +25,7 @@ date: 2024-03-31 00:00:00
 {% note info  %}
 本篇章主要介绍「双清」和「刷机」的效果与方法。这并不是必需步骤，只推荐有条件的朋友尝试。
 {% endnote %}
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-01.webp)  
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-01.webp)  
 
 想要对房子进行精装修，最好是从「干净的毛坯房」开始。同样地，想要对设备进行优化，最好是从「干净的系统」开始。一个「干净的系统」可以为设备打下良好的软件基础，不受应用卸载残留、系统升级冲突、设备缓存积累等问题影响。那么怎样才能实现「干净的系统」呢？有以下三种方式：
 
@@ -37,7 +36,7 @@ date: 2024-03-31 00:00:00
 **清理效果排名：刷机 > 双清 > 恢复出厂设置**。对于大多数人来说，恢复出厂设置就足够了。但对于能看到这篇文章的朋友，你们应该不会只局限于此。接下来我会介绍「双清」和「刷机」的具体步骤。新手可以尝试简单的「双清」，大佬直接「刷机」就行了。操作前请记得备份数据，防止重要数据丢失。
 
 ##### 双清
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-02.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-02.webp)
 
 > 1. 退出三星账号与 Google 账号，切记！
 > 2. 关机后按住「电源键」和「音量+键」，同时用数据线连接电脑，进入如上界面。
@@ -46,7 +45,7 @@ date: 2024-03-31 00:00:00
 > 5. 选择 `Power Off` 关机，再重启即可。
 
 ##### 刷机 {% btn 视频教程::https://www.bilibili.com/video/BV1WT411U7QL/?spm_id_from=333.999.0.0&vd_source=aa0fa65feef706e1da2fb8b025515559 fa-play-circle %}
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-02.5.webp)  
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-03.webp)  
 
 **工具准备**
 
@@ -69,7 +68,7 @@ date: 2024-03-31 00:00:00
 {% note info  %} 
 本篇章主要介绍为了防止系统被「国产应用」拖垮。应当避免安装「官方最新版」。
 {% endnote %} 
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-03.webp)  
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-04.webp)  
 
 新机到手，或者刚刷完系统后，不建议直接在「应用商店」安装应用，或者用「换机助手」恢复应用。因为这样安装的都是「官方最新版」。  
 
@@ -98,7 +97,7 @@ Play版 > 定制版 > 第三方 > 破解版**
 {% note info  %}
 本篇章主要介绍系统设置中「非必要」的功能选项，并给出「关闭」或「开启」的建议。
 {% endnote %}
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-04.webp)  
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-05.webp)  
 
 你可以跟着指示「逐步查找」对应功能，也可以在设置中使用「搜索」来跳转。如果你认为某些功能对你有用，你可以选择保持「设备默认选项」。由于系统版本的差异，有些功能的「名称/位置」会不太一样，请注意识别。
 
@@ -278,7 +277,7 @@ Play版 > 定制版 > 第三方 > 破解版**
 {% note info  %}
 本篇章主要介绍 Shizuku 与相关的「工具类应用」，并提供一些技巧，来帮助提升设备的使用体验。
 {% endnote %}
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-05.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-06.webp)
 
 作为本篇章的核心，首先要介绍的就是 Shizuku。它是一款 Android 应用，允许其他应用直接使用「系统API 」，而无需 root 权限。以禁用 Google 框架为例，传统做法需要 root 设备来获取完整控制权，而 Shizuku 可以通过用户授权来「接管」系统 API，然后其它应用就可以通过 Shizuku 来使用系统 API ，从而实现「禁用系统应用」等高级功能。
 
@@ -304,7 +303,7 @@ Shizuku 下载安装后，需要通过「用户授权」才能正式接管系统
 三星助手， 一款专门针对三星设备开发的工具箱。它提供气密性测试、终端工具、修改系统设置、查看系统信息等许多功能。它还整合了 Good Lock 和 Galaxy Labs 里的所有应用，帮助用户更方便地自定义系统。除此以外，还可以通过 Sam Helper 实现几个功能：
 
 ###### **查询电池健康**
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-06.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-07.webp)
 > 1. 点击主页右上角的第二个图标，进入 Shizuku 终端
 > 2. 输入以下代码并执行
    `dumpsys battery | grep -i msave`
@@ -314,7 +313,7 @@ Shizuku 下载安装后，需要通过「用户授权」才能正式接管系统
 
 ###### **卡省电模式 + 120Hz 刷新率**
 OneUI 在省电模式下，默认无法开启 120Hz，如果你想「同时拥有」 省电模式的省电效果，和 120Hz 的高刷体验，就需要用到以下方法（俗称卡省电120）：
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-07.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-08.webp)
 
 > 1. 开启省电模式
 > 2. Sam Helper-系统设置-屏幕刷新率（自适应）
@@ -324,7 +323,7 @@ OneUI 在省电模式下，默认无法开启 120Hz，如果你想「同时拥�
 
 ###### **禁用系统更新**
 如果不想「升级系统」，或者想要关闭「更新手机」的通知提醒，可以通过禁用系统程序来实现。
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-08.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-09.webp)
 > 1. 点击主页右上角的第二个图标，进入 Shizuku 终端
 > 2. 输入「禁用指令」并执行即可（两条指令要分开执行）
    `pm disable-user com.wssyncmldm`
@@ -334,13 +333,13 @@ OneUI 在省电模式下，默认无法开启 120Hz，如果你想「同时拥�
       `pm enable com.sec.android.app`
 
 ##### Battery Guru {% btn 下载地址::https://liteapks.com/battery-guru.html %}
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-08.5.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-10.webp)
 电池专家，一款电池健康管理工具。它提供了多种功能，例如实时电流检测、电池容量估算、应用耗电情况等，来帮助用户监控和管理电池的使用情况，从而延长电池寿命。
 
 我们可以通过实时电流以及耗电统计图来判断设备是否存在「耗电异常」的情况，还可以修改设备的 `Doze`（瞌睡)模式，来帮助设备在息屏后「快速进入」深度 `Doze` 模式，从而降低待机功耗。
 
 ###### Doze 模式
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-09.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-11.webp)
 > 1. 应用主页-右上角设置-权限管理-允许发布通知、修改系统设置（开启）
 > 2. 打开 Sam Helper 的终端工具，「逐条」输入以下代码并执行
 >     `pm grant com.paget96.batteryguru android.permission.BATTERY_STATS`
@@ -350,7 +349,7 @@ OneUI 在省电模式下，默认无法开启 120Hz，如果你想「同时拥�
 > 3. 应用主页-底栏第四个选项-省电页面
 > 4. 配置-Doze优化、重新应用Doze参数、等待解锁（开启）
 
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-10.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-12.webp)
 > 5. 省电页面-启用系统省电程序、广播节能程序、快速doze、显示过渡动画、强制检查后台程序、启用振动、启用可选传感器（开启）
 > 6. 仅在屏幕时开启、夜间模式、亮度调节（按需选择）
 > 7. 低于以下电量开启系统省电（50%）
@@ -358,13 +357,13 @@ OneUI 在省电模式下，默认无法开启 120Hz，如果你想「同时拥�
 > 9. 应用需要保持在后台运行，电池需要设置为「不受限制」，教程完毕
 
 ##### App Ops {% btn 下载地址::https://appops.rikka.app/ %}
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-11.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-13.webp)
 一款管理应用行为的工具。它通过修改系统「appops」设置，以实现对应用的权限管理，并监控敏感权限的使用情况。相比于 Android 系统自带的权限管理，App Ops 提供了更多的权限管理选项。
 
 例如，我们可以通过 App Ops 关闭某些毒瘤应用的运动传感器、读取剪贴板、读取日历、读取设备识别码等权限，从而防止「摇一摇广告的跳转」和「个人隐私的泄漏」。这在系统自带的权限管理中是做不到的。
 
 ##### Scene {% btn 下载地址::http://vtools.omarea.com/ %}
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-12.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-14.webp)
 一款集合性能监测、充放电统计、应用管理、屏幕测试等许多功能的玩机工具箱，界面简洁易用。Scene 提供了三种工作模式，分别是基础模式、ADB 模式、ROOT 模式。在 Shizuku 授予权限后，即可激活 ADB 模式并免费使用上述功能（ ROOT 模式需付费)。
 
 ###### dex2oat 编译
@@ -372,15 +371,15 @@ Scene 中值得一提的是「强制 dex2oat 编译」功能。该功能与上�
 ***详细原理请看 [Galaxy App Booster 科普](https://radishzz.cc/404page/)** （文章待搬运，可以先在我的酷安主页查看）*
 
 ##### InstallerX {% btn 下载地址::https://github.com/iamr0s/InstallerX %}
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-13.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-15.webp)
 安装器X，一款干净的 Android 应用安装器。它采用 Material Design 与 Monet 取色，界面简约美观，并且支持应用降级安装、应用自动安装、更改安装样式等功能。我们可以把 InstallerX 设为「默认安装器」，从而取代系统自带的「软件包安装程序」，彻底解决烦人广告和应用检测的问题。
 
 ##### SD Maid {% btn 下载地址::https://liteapks.com/sd-maid-2-se-system-cleaner.html %}
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-14.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-16.webp)
 SD女仆，一款系统清理工具。它可以帮助用户清理不必要的文件、缓存、日志等，来释放存储空间。授予无障碍权限后，SD Maid 还能「自动清理」所有应用的缓存。这相当于你手动点进系统设置里，在每个应用的存储页面进行缓存清理。如果不是 Android 14 限制应用访问 data 文件夹，不然「清浊」也是一个非常棒的选择。
 
 ##### RootlessJamesDSP {% btn 下载地址::https://play.google.com/store/apps/details?id=me.timschneeberger.rootlessjamesdsp&hl=zh&gl=US %}
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-15.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-17.webp)
 一款不需要 root 的音频处理工具。它提供了丰富的音频处理功能，如动态范围压扩器、动态低音提升、多模态均衡器、声场宽度等。Sound Assistant 跟它相比简直是小巫见大巫，就算跟需要 root 的 ViPER4Android 相比，jamesDSP 也显得更加灵活和模块化，并且支持「导入配置」来调整参数。
 
 我们可以借助它来对设备的音频进行「个性化调节」，从而优化外放或耳机的音频效果。它的缺点是需要常驻后台，且不支持 Spotify。
@@ -394,19 +393,19 @@ SD女仆，一款系统清理工具。它可以帮助用户清理不必要的文
 {% note info  %}
 本篇章为进阶篇，主要介绍 Lycan 这款应用的功能、效果以及安装方法，并科普相关 Android 知识。需要一定玩机基础。
 {% endnote %}
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-16.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-18.webp)
 
 ##### 应用介绍
 Lycan 是一款专属于三星设备的应用，中文翻译为狼人，搭配狼头图标，~~我们不难看出作者是个狼人~~。它是 CCSWE App Manager 6.2.0版本的「汉化翻版」应用，目前有且仅有一个应用版本，即 5.0.0 汉化版。这两款应用几乎完全一致，我找到了 [CCSWE App Manager 破解版](https://apkmb.com/ccswe-app-manager-samsung/)的安装包（正版需付费），实测可以用与 Lycan 相同的激活方式进行安装激活（如上图其实是 CCSWE ），并且可以互相覆盖。
 
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-17.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-19.webp)
 
 这两款应用的功能也完全一致。CCSWE App Manager 在 Google Play 上的应用介绍是「一款终极的软件包禁用程序和膨胀软件杀手」。软件包禁用程序，是指它可以「禁用应用」，比如 Google 框架、Google 服务等系统应用。你用不上又卸载不掉的时候，就可以用 Lycan 来禁用它。
 
 膨胀软件杀手呢？简单来说，就是指通过禁用应用的「四大基本组件」来强制管理那些「臃肿且流氓的应用」。这能极大的优化你的设备，尤其是面对一些国内公司出品的 App 时。很多人只把 Lycan 当作冰箱/小黑屋来使用（冻结系统自带应用），却忽视了这个功能，这可能是一种对 Lycan 的浪费。
 
 ###### Android 四大基本组件
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-18.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-20.webp)
 由于安卓系统极大的开放性，有不少流氓应用会在系统内注册一堆「`Service` 服务」和「`Receiver` 广播接收器」常驻后台。有时候你虽然只是打开了一个 App，但是在后台已经有多个 App 服务被其「链式唤醒」，并且在后台「猛猛运行」消耗着 CPU 性能与电量。
 
 此时我们可以通过 Lycan 来解决这个问题。Lycan 可以管理「Android 四大基本组件」：`Service` 服务、`Broadcast Receiver` 广播接收器、`Activity` 活动 和 `Content Provider` 内容提供商。
@@ -472,7 +471,7 @@ Lycan 是一款专属于三星设备的应用，中文翻译为狼人，搭配�
 
 还可以搭配辅助工具 [Libchecker](https://play.google.com/store/apps/details?id=com.absinthe.libchecker&hl=en_US) 来帮助我们识别组件。该应用可查看 App 的四大组件及原生库，并提供相应介绍。  
 
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-19.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-21.webp)
 
 ##### 如何禁用组件
 面对那么多的 App，如果真的一个组件一个组件地去识别，那无疑是愚公移山。因此我提供一个简单的禁用办法——**禁用 App 的所有「服务」和「广播接收器」**。非常简单，直接全部禁用，并且基本不影响 App 的正常使用。
@@ -480,10 +479,10 @@ Lycan 是一款专属于三星设备的应用，中文翻译为狼人，搭配�
 因为国产 App 通常靠大量的`Activity` 来运行，而不怎么依赖 `Service` 服务，因此全部禁用也没有关系。`Broadcast Receiver` 广播接收器，国产 App 大多利用它来实现监控、自启、推送、甚至是「链式唤醒」，因此也可以全部禁用。
 
 这个方法适用于绝大多数「不需要实时接收消息」的国产 App，例如抖音、微博、贴吧等。以抖音为例。在正常情况下，抖音在退出前台后「仍在后台运行」，内存占用高达「1.7 G」。
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-20.gif)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-22.gif)
 
 在全部禁用的情况下，抖音在退出前台后「立刻进入缓存」，缓存占用减少到「0.9 G」。
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-21.gif)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-23.gif)
 
 通过禁用 App 的所有「服务」和「广播接收器」可以实现以下效果，堪比「墓碑模式」。
 1. 应用退出后立刻进入缓存，不在后台驻留任何服务。
@@ -747,7 +746,7 @@ Lycan 是利用 Samsung Knox SDK 进行工作的，但是它无法直接获取 K
 改用「安全文件夹」进行安装。
 
 ##### 使用方法
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-22.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-24.webp)
 
 - **禁用应用**：主页-点击应用「图标」-点击左下角`Enable`解禁或`Disable`禁用（右上角可全选）
 - **禁用组件**：主页-点击应用「名称」-选择四大基本组件-点击组件「图标」-点击下方`Enable`解禁或`Disable`禁用（右上角可全选）
@@ -755,7 +754,7 @@ Lycan 是利用 Samsung Knox SDK 进行工作的，但是它无法直接获取 K
 - **导入/导出应用禁用方案**：主页-侧边栏-最爱-右上角三个点-导入/导出
 - **导入/导出组件禁用方案**：主页-侧边栏-历史记录-右上角三个点-导入/导出
 
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-23.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-25.webp)
 
 ------
 
@@ -764,7 +763,7 @@ Lycan 是利用 Samsung Knox SDK 进行工作的，但是它无法直接获取 K
 {% note info  %}
 本篇章为进阶篇，主要介绍 Adhell3 这款应用的功能与安装方法。需要一定玩机基础。
 {% endnote %}
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-24.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-26.webp)
 
 Adhell3 也是一款专属于三星设备的应用，中文翻译为「广告地狱」，顾名思义其主打功能为「去广告」。它最初是由三星开发者 FiendFyre 开发，后因一些原因被迫下架。随后推出了 Adhell2，但在一段时间后也停止了服务。直到 2017 年 Adhell3 才出现。
 
@@ -850,13 +849,13 @@ Adhell3 从 2017 年至今已经「年久失修」，在 OneUI 升级到 6.0 后
 设置中搜索「私密 DNS」，选择「私密 DNS 主机名」，输入`adprodnsali.trli.club`后保存即可。DNS 来自@[冷漠](https://blog.trli.cloudns.biz/article/000003/index.html)，大佬更新很勤快，有问题可以向他反馈。
 
 ###### ACL4SSR 广告拦截规则
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-25.webp)
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-27.webp)
 进入[订阅转换页](https://acl4ssr-sub.github.io/)，如图进行「订阅链接转换」。原理是在你的 VPN  订阅链接里添加 ACL4SSR 广告拦截规则，它仅在代理开启时生效。
 
 ------
 
 #### 总结
-![图片](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image/002-samsung-oneui-26.webp)  
+![图片](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-28.webp)  
 
 刚开始写这篇文章，只是想在 OneUI 6.1 推送更新之前，捋一遍新系统的设置流程，方便自己刷机后进行设置恢复。顺便整合一下自己之前的文章，毕竟都是关于 OneUI 的。结果花了好几天，写完一看都 1w+ 字数了，毕业论文都没这么长。所以就整理成「优化指南」分享出来，方便各位网友进行参考。不出意外的话，过几天本篇指南就可以在 Google 和百度上搜到了。
 
@@ -870,10 +869,10 @@ Adhell3 从 2017 年至今已经「年久失修」，在 OneUI 升级到 6.0 后
 {% folding gray::打赏 %}
 {% tabs First unique name %}
 <!-- tab 微信-->
- ![qrcode-wechat](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image@main/qrcode-wechat.webp)
+ ![qrcode-wechat](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-qrcode-wechat.webp)
 <!-- endtab -->
 <!-- tab 支付宝-->
-![qrcode-alipay](https://cdn.radishzz.cc/gh/radishzzz/jsDelivr-image@main/qrcode-alipay.webp)
+![qrcode-alipay](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-qrcode-alipay.webp)
 <!-- endtab -->
 {% endtabs %}
 {% endfolding %}
