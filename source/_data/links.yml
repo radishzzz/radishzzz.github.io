@@ -1,23 +1,26 @@
-- links_category: Website
+- links_category: Reality
+  has_thumbnail: true
+  list:
+    - name: "radishzz's blog"
+      link: https://radishzz.cc
+      description: (´・ω・´)
+      avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
+      thumbnail: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-wallpaper-light.webp
+    - name: "radishzz's blog"
+      link: https://radishzz.netlify.app
+      description: mirror site
+      avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
+      thumbnail: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-wallpaper-light.webp
+
+
+- links_category: Network
   has_thumbnail: false
   list:
-    - name: radishzz01
+    - name: example01
       link: https://radishzz.cc
-      description: (´・ω・´)
+      description: Hello World
       avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
-      thumbnail:
-    - name: radishzz02
+    - name: example02
       link: https://radishzz.cc
-      description: (´・ω・´)
+      description: Hello World
       avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
-      thumbnail:
-    - name: radishzz03
-      link: https://radishzz.cc
-      description: (´・ω・´)
-      avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
-      thumbnail:
-    - name: radishzz04
-      link: https://radishzz.cc
-      description: (´・ω・´)
-      avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
-      thumbnail:

@@ -4,7 +4,6 @@ db.json
 node_modules/
 package-lock.json
 public/
-scaffolds/
 themes/
 *.log
 Thumbs.db
