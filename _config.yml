@@ -1,5 +1,5 @@
 # Site 网站设置
-title: "radishzz's blog"
+title: "radishzz's blog" # 主标题
 subtitle: # 副标题
 description: "Welcome to radishzz's blog. This is my personal space to share my thoughts and ideas. You will find many useful tutorials and personal essays" # 简要描述，通常用于 SEO 和 meta 标签中
 keywords: radishzz # 关键词列表，有助于 SEO
@@ -99,7 +99,7 @@ all_minifier: true # 是否启用站点文件压缩优化
 # hexo-auto-category 自动生成目录
 auto_category:
  enable: true # 是否启用
- depth: 1 # 目录分类长度
+ depth: 2 # 目录分类长度
 
 # hexo-filter-nofollow 为外链添加 nofollow 属性
 nofollow:
