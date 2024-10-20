@@ -2,13 +2,14 @@
 title: 「入土级」三星 OneUI 优化完全指南
 excerpt: 一份指南，带你从入门到入土。
 categories:
-  - Guide
+  - zh
 tags:
   - Android
   - Samsung
   - OneUI
 abbrlink: 384776b2
-thumbnail: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-28.webp
+thumbnail: >-
+  https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-28.webp
 date: 2024-03-31 00:00:00
 ---
 #### 前言
