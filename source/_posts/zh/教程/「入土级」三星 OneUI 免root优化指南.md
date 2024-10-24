@@ -1,7 +1,7 @@
 ---
 title: 「入土级」 三星 One UI 优化完全指南
-date: 2024-03-31 00:00:00
-updated: 2024-10-22 16:00:00
+date: 2024-03-31
+updated: 2024-10-24
 categories:
   - zh
   - 教程
@@ -17,9 +17,8 @@ excerpt: 一份指南，带你从入门到入土。
 
 ---
 
-
 {% note info  %}
-<i class="fa-solid fa-circle-info mr-2"></i>移动端开启桌面版网站可以查看目录
+<i class="fa-solid fa-circle-info mr-2"></i>移动端开启桌面版网站即可查看目录
 {% endnote %}
 
 本文是一篇针对三星 One UI 的超大型免 root 优化指南，旨在帮助大家提升设备的续航与流畅度，解决耗电过快、卡顿掉帧等问题。指南详细介绍了各种优化方法和原理。跟着这些方法，你的三星设备将会获得超强的续航和丝滑的体验，仿佛重获新生！
@@ -27,13 +26,13 @@ excerpt: 一份指南，带你从入门到入土。
 本指南以港版 One UI 6.1 为背景，结合大量前辈经验和个人玩机心得重制而成。篇幅超长，全部看完需要 30 分钟左右。你可以先通过右侧的目录了解大致内容。如果你准备好了，那么我们就开始吧！
 
 {% folding gray::更新记录 %}
-1. 更换 DNS 推荐。
-2. 更新部分失效链接。
-3. 检查并更新系统设置篇。
-4. 优化目录层级与中英文空格。
-5. 更换字体导致「」符号显得十分拥挤，因此全部删除。
-6. 增加 One UI 6.1 不再支持安装 Lycan 和 Adhell 3 的提示。
-7. 补充 Lycan 和 Adhell 3 的第二种 [安装方式](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-30.webp)。
+1. 更换 DNS 推荐
+3. 更新系统设置篇
+3. 更新部分失效链接
+4. 更新 Lycan 禁用列表
+5. 优化目录层级与中英文空格
+6. 增加部分 One UI 6.1 不再支持安装 Lycan 和 Adhell 3 的提示。
+6. 补充 Lycan 和 Adhell 3 的第二种 [安装方式](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-30.webp)
 {% endfolding %}
 
 
@@ -53,7 +52,7 @@ excerpt: 一份指南，带你从入门到入土。
 > - **双清**：执行两个清除操作，包括恢复出厂设置 `Wipe data/factory reset` 和清除系统缓存分区 `Wipe Cache Partition`。
 > - **刷机**：刷入系统固件（全量包），彻底重装设备的操作系统。
 
-**清理效果排名：刷机 > 双清 > 恢复出厂设置**。对于大多数人来说，恢复出厂设置就足够了。但对于能看到这篇文章的朋友，你们应该不会只局限于此。接下来我会介绍双清和刷机的具体步骤。新手可以尝试简单的双清，高手直接刷机就行了。操作前请记得备份数据，避免丢失重要数据。
+**清理效果排名：刷机 > 双清 > 恢复出厂设置**。对于大多数人来说，恢复出厂设置就足够了。但对于能看到这篇文章的朋友，你们应该不会只局限于此。接下来我会介绍双清和刷机的具体步骤。新手可以尝试简单的双清，高手直接刷机就行了。操作前请记得备份数据，避免重要数据丢失。
 
 ### 双清
 
@@ -67,21 +66,21 @@ excerpt: 一份指南，带你从入门到入土。
 
 ### 刷机
 
-![三星线刷工具 Odin 3](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-03.webp)  
+![三星线刷工具 Odin3](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-03.webp)  
 
 #### 工具准备
 
-- [视频教程](https://www.bilibili.com/video/BV1WT411U7QL/)
 - [三星 USB 驱动](https://developer.samsung.com/android-usb-driver)
-- [三星线刷工具 Odin 3](https://odindownloader.com/)
+- [三星线刷工具 Odin3](https://odindownloader.com/)
 - 系统固件下载工具 [SamFirm](https://samfirmtool.com/)、[Frijia](https://github.com/SlackingVeteran/frija)、[Bifrost](https://github.com/zacharee/SamloaderKotlin)、[SamFw](https://samfw.com/) 等
+- [视频教程推荐](https://www.bilibili.com/video/BV1WT411U7QL/)
 
 #### 完整步骤
 
 > 1. 退出三星账号与 Google 账号。
 > 2. 安装上述驱动与线刷工具。
 > 2. 下载固件后解压，获得 `BL`、`AP`、`CP`、`CSC`、`USERDATA` 五件套。
-> 3. 打开 Odin 3，依次选择 `BL`、`AP`、`CP`、`CSC` 并导入对应名称的文件。导入 `AP` 大概需要三分钟，耐心等待即可。
+> 3. 打开 Odin3，依次选择 `BL`、`AP`、`CP`、`CSC` 并导入对应名称的文件。导入 `AP` 大概需要三分钟，耐心等待即可。
 > 4. 设备关机状态下，同时按住音量 + 键和音量 - 键，并用数据线连接电脑，亮屏后松开。出现下载图标后再按一下音量 + 键，即可进入刷机模式。
 > 5. 查看左上角 `ID:COM` 方块，显示 `0:COM+数字` 则代表设备连接成功，点击 `Start` 开始刷机。
 > 6. 左上角显示 `PASS`，代表刷机完成，设备会自动重启。
@@ -131,7 +130,7 @@ excerpt: 一份指南，带你从入门到入土。
 
 ![系统设置](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-05.webp)  
 
-你可以跟着指示逐步找到对应功能，也可以在设置中使用搜索来直接跳转。如果你认为某些功能对你有用，你可以选择保持默认选项。由于系统版本差异，有些功能的名称和位置会不太一样，请注意识别。
+你可以跟着指示逐步找到对应功能，也可以在设置中使用搜索来直接跳转。如果你认为某些功能对你有用，可以保持默认选项。由于系统版本差异，有些功能的名称和位置会不太一样，请注意识别。
 
 1. **三星账户**
 > - 安全与隐私-个性化服务-停止自定义所有设备（停止所有个性化）
@@ -146,7 +145,7 @@ excerpt: 一份指南，带你从入门到入土。
 > - 流量监控-流量节省（关闭）
 > - 更多连接设置-附近设备扫描（关闭）
 
-关于 Wi-Fi 省电模式，虽然写着可以减少电池使用量，但也会降低数据吞吐量，设备只会在定期唤醒时进行数据收发。这可能会影响微信 QQ 等应用消息的实时接收，因此选择关闭。
+关于 Wi-Fi 省电模式，虽然写着可以减少电池使用量，但也会降低数据吞吐量。设备只会在定期唤醒时进行数据收发，这可能会影响微信 QQ 等应用消息的实时接收，因此选择关闭。
 
 3. **已连接的设备**
 > - 所有功能（按需开启）
@@ -237,7 +236,7 @@ excerpt: 一份指南，带你从入门到入土。
 > - 性能配置（轻度）
 > - 自动优化-自动重启（关闭）
 
-关于 RAM Plus，其原理是把部分存储空间作为额外的运行内存来使用，这对低内存设备或高负载场景（例如运行游戏时）有较大帮助。但如果设备本身的运行内存足够，再开启 RAM Plus 就没什么帮助，相反还会导致频繁的数据读写，从而略微降低设备性能。因此推荐 8G 开启，12G 关闭。
+关于 RAM Plus，其原理是把部分存储空间作为额外的运行内存来使用，这对低内存设备或高负载场景（例如运行游戏时）有较大帮助。但如果设备本身的运行内存足够，再开启 RAM Plus 就没什么帮助，相反还会因为频繁的数据读写，从而略微降低设备性能。因此推荐 8G 开启，12G 关闭。
 
 16. **应用程序**
 > - 点击右侧居中位置的图标 排序-显示系统应用程序（打开）
@@ -290,7 +289,7 @@ excerpt: 一份指南，带你从入门到入土。
 
 ### Good Guardians 设置
 
-以下应用来自三星官方插件 Good Guardians。这款插件可以在系统自带的应用商店中下载。注意，这些应用需要保持在后台运行才能生效，请参考上述步骤 22 来设置。
+以下应用来自三星官方插件 Good Guardians。这款插件可以在系统自带的应用商店中下载。注意，这些应用需要在后台保持运行才能生效，请参考上述步骤 22 来设置。
 
 24. **Thermal Guardian（管理设备温度）**
 > - 过热阈值（调到最低）
@@ -403,7 +402,7 @@ One UI 在省电模式下，默认无法开启 120Hz。如果你想同时拥有�
 
 ![开启 Doze 模式](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-11.webp)
 
-> 1. 应用主页-右上角设置-权限管理-允许发布通知、修改系统设置（开启）
+> 1. 应用主页-右上角设置-权限管理器-允许通知、修改系统设置（开启）
 > 2. 打开 Sam Helper 的终端工具，逐条输入以下代码并执行
 >     `pm grant com.paget96.batteryguru android.permission.BATTERY_STATS`
 >     `pm grant com.paget96.batteryguru android.permission.PACKAGE_USAGE_STATS`
@@ -438,11 +437,11 @@ One UI 在省电模式下，默认无法开启 120Hz。如果你想同时拥有�
 
 Scene 中值得一提的是强制 dex2oat 编译功能。该功能与上述提到的 App Booster 的工作原理相同，但是 Scene 提供了更多编译模式。使用 `everything` 模式编译以后，可以最大程度提升设备的流畅度。
 
-#### [Installer X](https://github.com/iamr0s/InstallerX)
+#### [InstallerX](https://github.com/iamr0s/InstallerX)
 
 ![Installer X](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-15.webp)
 
-安装器 X，一款干净的 Android 应用安装器。它采用 Material Design 与 Monet 取色，界面简约美观，并且支持应用降级安装、应用自动安装、更改安装样式等功能。我们可以把 Installer X 设为默认安装器，从而取代系统自带的软件包安装程序，彻底解决烦人广告和应用检测的问题。
+安装器 X，一款干净的 Android 应用安装器。它采用 Material Design 与 Monet 取色，界面简约美观，并且支持应用降级安装、应用自动安装、更改安装样式等功能。我们可以把 InstallerX 设为默认安装器，从而取代系统自带的软件包安装程序，彻底解决烦人广告和应用检测的问题。
 
 #### [SD Maid](https://liteapks.com/sd-maid-2-se-system-cleaner.html) 
 
@@ -783,7 +782,7 @@ Lycan 是利用 Samsung Knox SDK 进行工作的，但它无法直接获取 Knox
 #### 完整步骤
 
 {% note red 提示 %}
-本教程不再适用于 One UI 6.1 及之后的系统版本。步骤 1 必定执行失败，显示 Failed to change state of package。因为官方在 24 年 10 月的系统更新中加强了  Knox 的安全等级，导致无法再通过 ADB 禁用 1.2.14 版本的 KLMS Agent。
+不适用于部分 One UI 6.1 及之后的系统版本。因为官方在 24 年 10 月的系统更新中加强了  Knox 的安全等级，导致无法再通过 ADB 禁用 1.2.14 版本的 KLMS Agent。因此步骤 1 必定失败，显示 Failed to change state of package。
 {% endnote %}
 
 > - ***1. 开放 Knox 权限***
@@ -812,7 +811,7 @@ Lycan 是利用 Samsung Knox SDK 进行工作的，但它无法直接获取 Knox
 #### 常见问题
 
 1. One UI 6.1 能安装吗？
-不一定，本教程仅适用于One UI 1.0 到部分 One UI 6.1。
+不一定，本教程仅适用于 One UI 1.0 到部分 One UI 6.1。
 2. 怎样算安装成功？
 进入主页后显示所有应用。
 3. 主页不显示应用？
@@ -909,7 +908,7 @@ Adhell 3 和 Lycan 的工作原理一样，都是利用 Samsung Knox SDK 进行�
 #### 完整步骤
 
 {% note red 提示 %}
-本教程不再适用于 One UI 6.1 及之后的系统版本。步骤 1 必定执行失败，显示 Failed to change state of package。因为官方在 24 年 10 月的系统更新中加强了  Knox 的安全等级，导致无法再通过 ADB 禁用 1.2.14 版本的 KLMS Agent。
+不适用于部分 One UI 6.1 及之后的系统版本。因为官方在 24 年 10 月的系统更新中加强了  Knox 的安全等级，导致无法再通过 ADB 禁用 1.2.14 版本的 KLMS Agent。因此步骤 1 必定失败，显示 Failed to change state of package。
 {% endnote %}
 
 > - ***1. 开放 Knox 权限***
@@ -983,7 +982,7 @@ Adhell 3 从 2017 年至今已经年久失修，在 One UI 升级到 6.0 后又�
 那么关于整篇指南的主旨，想要提升设备的续航与流畅度，其实并不需要完成那么多花里胡哨的操作。如果你是以玩机为目的，那你确实可以全部跟着做一遍。但对于大多数人来说，日用才是关键，这些操作已经远远超纲了。通常你只需要完成应用安装篇和系统设置篇就可以达到很不错的续航和流畅度了，没必要再折腾禁用什么的，这些收益已经不大了。
 
 最后给六个篇章的流畅省电效果排个名吧：
-**系统设置篇 > 应用安装篇 > 双清刷机篇 > Shizuku 应用篇 ≈ Lycan 禁用篇 > Adhell 3 广告拦截**
+**系统设置篇 > 应用安装篇 > 双清刷机篇 > Shizuku 应用篇 ≈ Lycan 禁用篇 > Adhell 3 广告拦截篇**
 
 {% note info  %}
 如果觉得本指南对你有一些帮助，欢迎赞助我一杯奶茶💰，我也可以为你解答相关问题。

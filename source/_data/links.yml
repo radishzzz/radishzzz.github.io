@@ -2,13 +2,13 @@
   has_thumbnail: true
   list:
     - name: "radishzz's blog"
-      link: https://radishzz.cc
       description: (´・ω・´)
+      link: https://radishzz.cc
       avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
       thumbnail: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-wallpaper-light.webp
     - name: "radishzz's blog"
-      link: https://radishzz.netlify.app
       description: mirror site
+      link: https://radishzz.netlify.app
       avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
       thumbnail: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-wallpaper-light.webp
 
@@ -16,11 +16,11 @@
 - links_category: Network
   has_thumbnail: false
   list:
-    - name: example01
-      link: https://radishzz.cc
+    - name: duanluan 的博客
+      description: 书山有路勤为径，学海无涯苦作舟
+      link: https://blog.zhjh.top/
+      avatar: https://blog.zhjh.top/upload/自制头像.jpg
+    - name: example
       description: Hello World
-      avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
-    - name: example02
       link: https://radishzz.cc
-      description: Hello World
       avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
