@@ -23,7 +23,7 @@
     <url>/posts/384776b2/</url>
     <content><![CDATA[
   <div class="note p-4 mb-4 rounded-small info">
-    <p><i class="fa-solid fa-circle-info mr-2"></i>移动端开启桌面版网站可以查看目录</p>
+    <p><i class="fa-solid fa-circle-info mr-2"></i>移动端开启桌面版网站即可查看目录</p>
 
   </div>
 
@@ -31,7 +31,7 @@
 <p>本指南以港版 One UI 6.1 为背景，结合大量前辈经验和个人玩机心得重制而成。篇幅超长，全部看完需要 30 分钟左右。你可以先通过右侧的目录了解大致内容。如果你准备好了，那么我们就开始吧！</p>
 <details class="gray" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>更新记录 </summary>
               <div class='content'>
-              <ol><li>更换 DNS 推荐。</li><li>更新部分失效链接。</li><li>检查并更新系统设置篇。</li><li>优化目录层级与中英文空格。</li><li>更换字体导致「」符号显得十分拥挤，因此全部删除。</li><li>增加 One UI 6.1 不再支持安装 Lycan 和 Adhell 3 的提示。</li><li>补充 Lycan 和 Adhell 3 的第二种 <a class="link"   href="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-30.webp" >安装方式 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。</li></ol>
+              <ol><li>更换 DNS 推荐</li><li>更新系统设置篇</li><li>更新部分失效链接</li><li>更新 Lycan 禁用列表</li><li>优化目录层级与中英文空格</li><li>增加部分 One UI 6.1 不再支持安装 Lycan 和 Adhell 3 的提示。</li><li>补充 Lycan 和 Adhell 3 的第二种 <a class="link"   href="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-30.webp" >安装方式 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li></ol>
               </div>
             </details>
 
@@ -53,7 +53,7 @@
 <li><strong>刷机</strong>：刷入系统固件（全量包），彻底重装设备的操作系统。</li>
 </ul>
 </blockquote>
-<p><strong>清理效果排名：刷机 &gt; 双清 &gt; 恢复出厂设置</strong>。对于大多数人来说，恢复出厂设置就足够了。但对于能看到这篇文章的朋友，你们应该不会只局限于此。接下来我会介绍双清和刷机的具体步骤。新手可以尝试简单的双清，高手直接刷机就行了。操作前请记得备份数据，避免丢失重要数据。</p>
+<p><strong>清理效果排名：刷机 &gt; 双清 &gt; 恢复出厂设置</strong>。对于大多数人来说，恢复出厂设置就足够了。但对于能看到这篇文章的朋友，你们应该不会只局限于此。接下来我会介绍双清和刷机的具体步骤。新手可以尝试简单的双清，高手直接刷机就行了。操作前请记得备份数据，避免重要数据丢失。</p>
 <h3 id="双清"><a href="#双清" class="headerlink" title="双清"></a>双清</h3><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-02.webp" alt="Recovery 模式"></p>
 <blockquote>
 <ol>
@@ -64,19 +64,19 @@
 <li>选择 <code>Power Off</code> 关机，再重启即可。</li>
 </ol>
 </blockquote>
-<h3 id="刷机"><a href="#刷机" class="headerlink" title="刷机"></a>刷机</h3><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-03.webp" alt="三星线刷工具 Odin 3">  </p>
+<h3 id="刷机"><a href="#刷机" class="headerlink" title="刷机"></a>刷机</h3><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-03.webp" alt="三星线刷工具 Odin3">  </p>
 <h4 id="工具准备"><a href="#工具准备" class="headerlink" title="工具准备"></a>工具准备</h4><ul>
-<li><a class="link"   href="https://www.bilibili.com/video/BV1WT411U7QL/" >视频教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li><a class="link"   href="https://developer.samsung.com/android-usb-driver" >三星 USB 驱动 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   href="https://odindownloader.com/" >三星线刷工具 Odin 3 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://odindownloader.com/" >三星线刷工具 Odin3 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>系统固件下载工具 <a class="link"   href="https://samfirmtool.com/" >SamFirm <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>、<a class="link"   href="https://github.com/SlackingVeteran/frija" >Frijia <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>、<a class="link"   href="https://github.com/zacharee/SamloaderKotlin" >Bifrost <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>、<a class="link"   href="https://samfw.com/" >SamFw <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 等</li>
+<li><a class="link"   href="https://www.bilibili.com/video/BV1WT411U7QL/" >视频教程推荐 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ul>
 <h4 id="完整步骤"><a href="#完整步骤" class="headerlink" title="完整步骤"></a>完整步骤</h4><blockquote>
 <ol>
 <li>退出三星账号与 Google 账号。</li>
 <li>安装上述驱动与线刷工具。</li>
 <li>下载固件后解压，获得 <code>BL</code>、<code>AP</code>、<code>CP</code>、<code>CSC</code>、<code>USERDATA</code> 五件套。</li>
-<li>打开 Odin 3，依次选择 <code>BL</code>、<code>AP</code>、<code>CP</code>、<code>CSC</code> 并导入对应名称的文件。导入 <code>AP</code> 大概需要三分钟，耐心等待即可。</li>
+<li>打开 Odin3，依次选择 <code>BL</code>、<code>AP</code>、<code>CP</code>、<code>CSC</code> 并导入对应名称的文件。导入 <code>AP</code> 大概需要三分钟，耐心等待即可。</li>
 <li>设备关机状态下，同时按住音量 + 键和音量 - 键，并用数据线连接电脑，亮屏后松开。出现下载图标后再按一下音量 + 键，即可进入刷机模式。</li>
 <li>查看左上角 <code>ID:COM</code> 方块，显示 <code>0:COM+数字</code> 则代表设备连接成功，点击 <code>Start</code> 开始刷机。</li>
 <li>左上角显示 <code>PASS</code>，代表刷机完成，设备会自动重启。</li>
@@ -112,7 +112,7 @@
   </div>
 
 <p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-05.webp" alt="系统设置">  </p>
-<p>你可以跟着指示逐步找到对应功能，也可以在设置中使用搜索来直接跳转。如果你认为某些功能对你有用，你可以选择保持默认选项。由于系统版本差异，有些功能的名称和位置会不太一样，请注意识别。</p>
+<p>你可以跟着指示逐步找到对应功能，也可以在设置中使用搜索来直接跳转。如果你认为某些功能对你有用，可以保持默认选项。由于系统版本差异，有些功能的名称和位置会不太一样，请注意识别。</p>
 <ol>
 <li><p><strong>三星账户</strong></p>
 <blockquote>
@@ -136,7 +136,7 @@
 </blockquote>
 </li>
 </ol>
-<p>关于 Wi-Fi 省电模式，虽然写着可以减少电池使用量，但也会降低数据吞吐量，设备只会在定期唤醒时进行数据收发。这可能会影响微信 QQ 等应用消息的实时接收，因此选择关闭。</p>
+<p>关于 Wi-Fi 省电模式，虽然写着可以减少电池使用量，但也会降低数据吞吐量。设备只会在定期唤醒时进行数据收发，这可能会影响微信 QQ 等应用消息的实时接收，因此选择关闭。</p>
 <ol start="3">
 <li><p><strong>已连接的设备</strong></p>
 <blockquote>
@@ -275,7 +275,7 @@
 </blockquote>
 </li>
 </ol>
-<p>关于 RAM Plus，其原理是把部分存储空间作为额外的运行内存来使用，这对低内存设备或高负载场景（例如运行游戏时）有较大帮助。但如果设备本身的运行内存足够，再开启 RAM Plus 就没什么帮助，相反还会导致频繁的数据读写，从而略微降低设备性能。因此推荐 8G 开启，12G 关闭。</p>
+<p>关于 RAM Plus，其原理是把部分存储空间作为额外的运行内存来使用，这对低内存设备或高负载场景（例如运行游戏时）有较大帮助。但如果设备本身的运行内存足够，再开启 RAM Plus 就没什么帮助，相反还会因为频繁的数据读写，从而略微降低设备性能。因此推荐 8G 开启，12G 关闭。</p>
 <ol start="16">
 <li><p><strong>应用程序</strong></p>
 <blockquote>
@@ -358,7 +358,7 @@
 </blockquote>
 </li>
 </ol>
-<h3 id="Good-Guardians-设置"><a href="#Good-Guardians-设置" class="headerlink" title="Good Guardians 设置"></a>Good Guardians 设置</h3><p>以下应用来自三星官方插件 Good Guardians。这款插件可以在系统自带的应用商店中下载。注意，这些应用需要保持在后台运行才能生效，请参考上述步骤 22 来设置。</p>
+<h3 id="Good-Guardians-设置"><a href="#Good-Guardians-设置" class="headerlink" title="Good Guardians 设置"></a>Good Guardians 设置</h3><p>以下应用来自三星官方插件 Good Guardians。这款插件可以在系统自带的应用商店中下载。注意，这些应用需要在后台保持运行才能生效，请参考上述步骤 22 来设置。</p>
 <ol start="24">
 <li><p><strong>Thermal Guardian（管理设备温度）</strong></p>
 <blockquote>
@@ -470,7 +470,7 @@
 <h5 id="Doze-模式"><a href="#Doze-模式" class="headerlink" title="Doze 模式"></a>Doze 模式</h5><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-11.webp" alt="开启 Doze 模式"></p>
 <blockquote>
 <ol>
-<li>应用主页-右上角设置-权限管理-允许发布通知、修改系统设置（开启）</li>
+<li>应用主页-右上角设置-权限管理器-允许通知、修改系统设置（开启）</li>
 <li>打开 Sam Helper 的终端工具，逐条输入以下代码并执行<br> <code>pm grant com.paget96.batteryguru android.permission.BATTERY_STATS</code><br> <code>pm grant com.paget96.batteryguru android.permission.PACKAGE_USAGE_STATS</code><br> <code>pm grant com.paget96.batteryguru android.permission.WRITE_SECURE_SETTINGS</code><br> <code>pm grant com.paget96.batteryguru android.permission.DUMP</code></li>
 <li>应用主页-底栏第四个选项-省电页面</li>
 <li>配置-Doze 优化、重新应用 Doze 参数、等待解锁（开启）</li>
@@ -492,8 +492,8 @@
 <h4 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a><a class="link"   href="http://vtools.omarea.com/" >Scene <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-14.webp" alt="Scene"></p>
 <p>一款集合性能监测、充放电统计、应用管理、屏幕测试等许多功能的玩机工具箱，界面简洁易用。Scene 提供了三种工作模式，分别是基础模式、ADB 模式、ROOT 模式。在 Shizuku 授予权限后，即可激活 ADB 模式并免费使用上述功能（ ROOT 模式需付费)。</p>
 <h5 id="dex2oat-编译"><a href="#dex2oat-编译" class="headerlink" title="dex2oat 编译"></a>dex2oat 编译</h5><p>Scene 中值得一提的是强制 dex2oat 编译功能。该功能与上述提到的 App Booster 的工作原理相同，但是 Scene 提供了更多编译模式。使用 <code>everything</code> 模式编译以后，可以最大程度提升设备的流畅度。</p>
-<h4 id="Installer-X"><a href="#Installer-X" class="headerlink" title="Installer X"></a><a class="link"   href="https://github.com/iamr0s/InstallerX" >Installer X <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-15.webp" alt="Installer X"></p>
-<p>安装器 X，一款干净的 Android 应用安装器。它采用 Material Design 与 Monet 取色，界面简约美观，并且支持应用降级安装、应用自动安装、更改安装样式等功能。我们可以把 Installer X 设为默认安装器，从而取代系统自带的软件包安装程序，彻底解决烦人广告和应用检测的问题。</p>
+<h4 id="InstallerX"><a href="#InstallerX" class="headerlink" title="InstallerX"></a><a class="link"   href="https://github.com/iamr0s/InstallerX" >InstallerX <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-15.webp" alt="Installer X"></p>
+<p>安装器 X，一款干净的 Android 应用安装器。它采用 Material Design 与 Monet 取色，界面简约美观，并且支持应用降级安装、应用自动安装、更改安装样式等功能。我们可以把 InstallerX 设为默认安装器，从而取代系统自带的软件包安装程序，彻底解决烦人广告和应用检测的问题。</p>
 <h4 id="SD-Maid"><a href="#SD-Maid" class="headerlink" title="SD Maid"></a><a class="link"   href="https://liteapks.com/sd-maid-2-se-system-cleaner.html" >SD Maid <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-16.webp" alt="SD Maid"></p>
 <p>SD 女仆，一款系统清理工具。它可以帮助用户清理不必要的文件、缓存、日志等来释放存储空间。授予无障碍权限后，SD Maid 还能自动清理所有应用的缓存。这相当于你手动点进系统设置里，在每个应用的存储页面进行缓存清理。如果不是 Android 14 限制应用访问 data 文件夹，不然清浊也是一个非常棒的选择。</p>
 <h4 id="RootlessJamesDSP"><a href="#RootlessJamesDSP" class="headerlink" title="RootlessJamesDSP"></a><a class="link"   href="https://play.google.com/store/apps/details?id=me.timschneeberger.rootlessjamesdsp&hl=zh&gl=US" >RootlessJamesDSP <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-17.webp" alt="RootlessJamesDSP"></p>
@@ -595,7 +595,7 @@
 </ol>
 <h4 id="完整步骤-1"><a href="#完整步骤-1" class="headerlink" title="完整步骤"></a>完整步骤</h4>
   <div class="note p-4 mb-4 rounded-small red 提示">
-    <p>本教程不再适用于 One UI 6.1 及之后的系统版本。步骤 1 必定执行失败，显示 Failed to change state of package。因为官方在 24 年 10 月的系统更新中加强了  Knox 的安全等级，导致无法再通过 ADB 禁用 1.2.14 版本的 KLMS Agent。</p>
+    <p>不适用于部分 One UI 6.1 及之后的系统版本。因为官方在 24 年 10 月的系统更新中加强了  Knox 的安全等级，导致无法再通过 ADB 禁用 1.2.14 版本的 KLMS Agent。因此步骤 1 必定失败，显示 Failed to change state of package。</p>
 
   </div>
 
@@ -636,7 +636,7 @@
 </ul>
 </blockquote>
 <h4 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h4><ol>
-<li>One UI 6.1 能安装吗？<br>不一定，本教程仅适用于One UI 1.0 到部分 One UI 6.1。</li>
+<li>One UI 6.1 能安装吗？<br>不一定，本教程仅适用于 One UI 1.0 到部分 One UI 6.1。</li>
 <li>怎样算安装成功？<br>进入主页后显示所有应用。</li>
 <li>主页不显示应用？<br>重启设备即可。</li>
 <li>激活失败，显示 204 &#x2F; 301 ？<br>建议卸载干净，从头再试一遍。</li>
@@ -695,7 +695,7 @@
 </ol>
 <h4 id="完整步骤-2"><a href="#完整步骤-2" class="headerlink" title="完整步骤"></a>完整步骤</h4>
   <div class="note p-4 mb-4 rounded-small red 提示">
-    <p>本教程不再适用于 One UI 6.1 及之后的系统版本。步骤 1 必定执行失败，显示 Failed to change state of package。因为官方在 24 年 10 月的系统更新中加强了  Knox 的安全等级，导致无法再通过 ADB 禁用 1.2.14 版本的 KLMS Agent。</p>
+    <p>不适用于部分 One UI 6.1 及之后的系统版本。因为官方在 24 年 10 月的系统更新中加强了  Knox 的安全等级，导致无法再通过 ADB 禁用 1.2.14 版本的 KLMS Agent。因此步骤 1 必定失败，显示 Failed to change state of package。</p>
 
   </div>
 
@@ -759,7 +759,7 @@
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-28.webp" alt="One UI"> </p>
 <p>刚开始写这篇文章，只是想在 One UI 6.1 更新之前，捋一遍新系统的设置流程，方便自己刷机后进行恢复。结果花了好几天，写完一看都 1w+ 字数了，所以就整理成《优化指南》的形式分享出来，方便各位朋友进行参考。</p>
 <p>那么关于整篇指南的主旨，想要提升设备的续航与流畅度，其实并不需要完成那么多花里胡哨的操作。如果你是以玩机为目的，那你确实可以全部跟着做一遍。但对于大多数人来说，日用才是关键，这些操作已经远远超纲了。通常你只需要完成应用安装篇和系统设置篇就可以达到很不错的续航和流畅度了，没必要再折腾禁用什么的，这些收益已经不大了。</p>
-<p>最后给六个篇章的流畅省电效果排个名吧：<br><strong>系统设置篇 &gt; 应用安装篇 &gt; 双清刷机篇 &gt; Shizuku 应用篇 ≈ Lycan 禁用篇 &gt; Adhell 3 广告拦截</strong></p>
+<p>最后给六个篇章的流畅省电效果排个名吧：<br><strong>系统设置篇 &gt; 应用安装篇 &gt; 双清刷机篇 &gt; Shizuku 应用篇 ≈ Lycan 禁用篇 &gt; Adhell 3 广告拦截篇</strong></p>
 
   <div class="note p-4 mb-4 rounded-small info">
     <p>如果觉得本指南对你有一些帮助，欢迎赞助我一杯奶茶💰，我也可以为你解答相关问题。</p>
