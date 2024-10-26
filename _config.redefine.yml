@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
+  favicon: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar-120px.webp
   # Site logo
   logo:
   # Site avatar
-  avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar.webp
+  avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar-120px.webp
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
