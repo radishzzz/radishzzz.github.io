@@ -60,9 +60,9 @@ excerpt: 一份指南，带你从入门到入土。
 
 > 1. 退出三星账号与 Google 账号。
 > 2. 关机后按住电源键和音量 + 键，同时用数据线连接电脑，进入如上界面。
-> 3. 选择 `Wipe data/factory reset` 清除数据/恢复出厂设置，再选择 `yes` 确定。
-> 4. 选择 `Wipe cache partition` 清除缓存分区 ，再选择 `yes` 确定。
-> 5. 选择 `Power Off` 关机，再重启即可。
+> 3. 选择 `Wipe data/factory reset` 清除数据/恢复出厂设置，再选择 `恢复出厂设置` 确定。
+> 4. 选择 `Wipe cache partition` 清除缓存分区 ，再选择 `Yes` 确定。
+> 5. 选择 `Reboot system now` 重启系统即可。
 
 ### 刷机
 
