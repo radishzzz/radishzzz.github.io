@@ -59,9 +59,9 @@
 <ol>
 <li>退出三星账号与 Google 账号。</li>
 <li>关机后按住电源键和音量 + 键，同时用数据线连接电脑，进入如上界面。</li>
-<li>选择 <code>Wipe data/factory reset</code> 清除数据&#x2F;恢复出厂设置，再选择 <code>yes</code> 确定。</li>
-<li>选择 <code>Wipe cache partition</code> 清除缓存分区 ，再选择 <code>yes</code> 确定。</li>
-<li>选择 <code>Power Off</code> 关机，再重启即可。</li>
+<li>选择 <code>Wipe data/factory reset</code> 清除数据&#x2F;恢复出厂设置，再选择 <code>恢复出厂设置</code> 确定。</li>
+<li>选择 <code>Wipe cache partition</code> 清除缓存分区 ，再选择 <code>Yes</code> 确定。</li>
+<li>选择 <code>Reboot system now</code> 重启系统即可。</li>
 </ol>
 </blockquote>
 <h3 id="刷机"><a href="#刷机" class="headerlink" title="刷机"></a>刷机</h3><p><img loading="lazy" src="https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/001-samsung-oneui-03.webp" alt="三星线刷工具 Odin3">  </p>
