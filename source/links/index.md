@@ -9,5 +9,5 @@ comment: true
 Name: radishzz's blog
 Description: (´・ω・´)
 Address: https://radishzz.cc
-Avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar-120pxn.webp
+Avatar: [ Click to copy](https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar-120pxn.webp)
 {% endnotel %}
