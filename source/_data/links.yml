@@ -18,8 +18,8 @@
   list:
     - name: duanluan 的博客
       description: 书山有路勤为径，学海无涯苦作舟
-      link: https://blog.zhjh.top/
-      avatar: https://blog.zhjh.top/upload/自制头像.jpg
+      link: https://blog.zhjh.top
+      avatar: https://webp.radishzz.cc/friends/duanluan.webp
     - name: example
       description: Hello World
       link: https://radishzz.cc
