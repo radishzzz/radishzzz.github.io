@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar-120px.webp
+  favicon: https://webp.radishzz.cc/avatar-round.webp?width=48
   # Site logo
   logo:
   # Site avatar
-  avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar-120pxn.webp
+  avatar: https://webp.radishzz.cc/avatar.webp?width=120
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -122,8 +122,8 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image:
-    light: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-wallpaper-light.webp # light mode
-    dark: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-wallpaper-dark.webp # dark mode
+    light: https://image.radishzz.cc/image/wallpaper-light.webp # light mode
+    dark: https://image.radishzz.cc/image/wallpaper-dark.webp # dark mode
   # Home banner title
   title: radishzz's blog
   # Home banner subtitle

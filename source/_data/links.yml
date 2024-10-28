@@ -4,13 +4,13 @@
     - name: "radishzz's blog"
       description: (´・ω・´)
       link: https://radishzz.cc
-      avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar-120pxn.webp
-      thumbnail: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-wallpaper-light.webp
+      avatar: https://image.radishzz.cc/image/avatar.webp
+      thumbnail: https://image.radishzz.cc/image/wallpaper-light.webp
     - name: "radishzz's blog"
-      description: mirror site
+      description: (´・ω・´)
       link: https://radishzz.netlify.app
-      avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar-120pxn.webp
-      thumbnail: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-wallpaper-light.webp
+      avatar: https://image.radishzz.cc/image/avatar.webp
+      thumbnail: https://image.radishzz.cc/image/wallpaper-light.webp
 
 
 - links_category: Network
@@ -23,4 +23,4 @@
     - name: example
       description: Hello World
       link: https://radishzz.cc
-      avatar: https://cdn.radishzz.cc/gh/radishzzz/picgo-image@main/000-avatar-120pxn.webp
+      avatar: https://image.radishzz.cc/image/avatar.webp
