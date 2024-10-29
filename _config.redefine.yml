@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: https://webp.radishzz.cc/avatar-round.webp?width=48
+  favicon: https://image.radishzz.cc/image/avatar-round.webp
   # Site logo
   logo:
   # Site avatar
-  avatar: https://webp.radishzz.cc/avatar.webp?width=120
+  avatar: https://image.radishzz.cc/image/avatar.webp
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 

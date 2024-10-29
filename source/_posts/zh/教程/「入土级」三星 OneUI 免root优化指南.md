@@ -11,7 +11,7 @@ tags:
   - One UI
 abbrlink: 384776b2
 thumbnail: >-
-  https://webp.radishzz.cc/01-oneui/01.webp
+  https://image.radishzz.cc/image/01-oneui/01.webp
 excerpt: 一份指南，带你从入门到入土。
 
 
@@ -32,7 +32,7 @@ excerpt: 一份指南，带你从入门到入土。
 4. 更新 Lycan 禁用列表
 5. 优化目录层级与中英文空格
 6. 增加部分 One UI 6.1 不再支持安装 Lycan 和 Adhell 3 的提示。
-6. 补充 Lycan 和 Adhell 3 的第二种 [安装方式](https://webp.radishzz.cc/01-oneui/30.webp)
+6. 补充 Lycan 和 Adhell 3 的第二种 [安装方式](https://image.radishzz.cc/image/01-oneui/30.webp)
 {% endfolding %}
 
 
@@ -44,7 +44,7 @@ excerpt: 一份指南，带你从入门到入土。
 本篇章主要介绍双清和刷机的效果与方法。这并不是必需步骤，只推荐有条件的朋友尝试。
 {% endnote %}
 
-![刷机](https://webp.radishzz.cc/01-oneui/02.webp)  
+![刷机](https://image.radishzz.cc/image/01-oneui/02.webp)  
 
 想要对房子进行精装修，最好是从干净的毛坯房开始。同样地，想要对设备进行优化，最好是从干净的系统开始。一个干净的系统能为设备奠定良好的软件基础，避免受到应用卸载残留、系统升级冲突、设备缓存积累等问题的影响。那么怎样才能实现干净的系统呢？有以下三种方式：
 
@@ -56,7 +56,7 @@ excerpt: 一份指南，带你从入门到入土。
 
 ### 双清
 
-![Recovery 模式](https://webp.radishzz.cc/01-oneui/03.webp)
+![Recovery 模式](https://image.radishzz.cc/image/01-oneui/03.webp)
 
 > 1. 退出三星账号与 Google 账号。
 > 2. 关机后按住电源键和音量 + 键，同时用数据线连接电脑，进入如上界面。
@@ -66,7 +66,7 @@ excerpt: 一份指南，带你从入门到入土。
 
 ### 刷机
 
-![三星线刷工具 Odin3](https://webp.radishzz.cc/01-oneui/04.webp)  
+![三星线刷工具 Odin3](https://image.radishzz.cc/image/01-oneui/04.webp)  
 
 #### 工具准备
 
@@ -94,7 +94,7 @@ excerpt: 一份指南，带你从入门到入土。
 本篇章主要介绍为了防止系统被国产应用拖垮，应当避免安装最新版本。
 {% endnote %} 
 
-![国产应用](https://webp.radishzz.cc/01-oneui/05.webp)  
+![国产应用](https://image.radishzz.cc/image/01-oneui/05.webp)  
 
 新机刚到手，或者刚刷完系统后，不建议直接在应用商店安装应用，或者用换机助手恢复应用。因为这样安装的都是最新版本。  
 
@@ -128,7 +128,7 @@ excerpt: 一份指南，带你从入门到入土。
 本篇章主要介绍系统设置中非必要的功能选项，并给出关闭或开启的建议。
 {% endnote %}
 
-![系统设置](https://webp.radishzz.cc/01-oneui/06.webp)  
+![系统设置](https://image.radishzz.cc/image/01-oneui/06.webp)  
 
 你可以跟着指示逐步找到对应功能，也可以在设置中使用搜索来直接跳转。如果你认为某些功能对你有用，可以保持默认选项。由于系统版本差异，有些功能的名称和位置会不太一样，请注意识别。
 
@@ -319,7 +319,7 @@ excerpt: 一份指南，带你从入门到入土。
 本篇章主要介绍 Shizuku 与相关的工具类应用，并提供一些技巧，来帮助提升设备的使用体验。
 {% endnote %}
 
-![Shizuku](https://webp.radishzz.cc/01-oneui/07.webp)
+![Shizuku](https://image.radishzz.cc/image/01-oneui/07.webp)
 
 作为本篇章的核心，首先要介绍的就是 Shizuku。它是一款 Android 应用，允许其他应用直接使用系统 API ，而无需 root 权限。以禁用 Google 框架为例，传统做法需要 root 设备来获取完整控制权，而 Shizuku 可以通过用户授权来接管系统 API，然后其它应用就可以通过 Shizuku 来使用系统 API ，从而实现禁用系统应用等高级功能。
 
@@ -352,7 +352,7 @@ Shizuku 下载安装后，需要通过用户授权才能正式接管系统 API�
 
 ##### **查询电池健康**
 
-![如何查询电池健康](https://webp.radishzz.cc/01-oneui/08.webp)
+![如何查询电池健康](https://image.radishzz.cc/image/01-oneui/08.webp)
 
 > 1. 点击主页右上角的第二个图标，进入 Shizuku 终端
 > 2. 输入并执行以下代码 `dumpsys battery | grep -i msave`
@@ -364,7 +364,7 @@ Shizuku 下载安装后，需要通过用户授权才能正式接管系统 API�
 
 One UI 在省电模式下，默认无法开启 120Hz。如果你想同时拥有省电模式的省电效果和 120Hz 的高刷体验，就需要用到以下方法（俗称卡省电）：
 
-![如何卡省电](https://webp.radishzz.cc/01-oneui/09.webp)
+![如何卡省电](https://image.radishzz.cc/image/01-oneui/09.webp)
 
 > 1. 开启省电模式
 > 2. Sam Helper-系统设置-屏幕刷新率（自适应）
@@ -376,7 +376,7 @@ One UI 在省电模式下，默认无法开启 120Hz。如果你想同时拥有�
 
 如果不想升级系统，或者想要关闭更新手机的系统提示，可以通过禁用系统更新来实现。
 
-![如何禁用系统更新](https://webp.radishzz.cc/01-oneui/10.webp)
+![如何禁用系统更新](https://image.radishzz.cc/image/01-oneui/10.webp)
 
 > 1. 点击主页右上角的第二个图标，进入 Shizuku 终端
 > 2. 输入禁用指令并执行即可（两条指令要分开执行）
@@ -388,7 +388,7 @@ One UI 在省电模式下，默认无法开启 120Hz。如果你想同时拥有�
 
 #### [Battery Guru](https://liteapks.com/battery-guru.html)
 
-![Battery Guru](https://webp.radishzz.cc/01-oneui/11.webp)
+![Battery Guru](https://image.radishzz.cc/image/01-oneui/11.webp)
 
 {% note  %}
 图中是旧版软件界面，跟新版不太一样
@@ -400,7 +400,7 @@ One UI 在省电模式下，默认无法开启 120Hz。如果你想同时拥有�
 
 ##### Doze 模式
 
-![开启 Doze 模式](https://webp.radishzz.cc/01-oneui/12.webp)
+![开启 Doze 模式](https://image.radishzz.cc/image/01-oneui/12.webp)
 
 > 1. 应用主页-右上角设置-权限管理器-允许通知、修改系统设置（开启）
 > 2. 打开 Sam Helper 的终端工具，逐条输入以下代码并执行
@@ -411,7 +411,7 @@ One UI 在省电模式下，默认无法开启 120Hz。如果你想同时拥有�
 > 3. 应用主页-底栏第四个选项-省电页面
 > 4. 配置-Doze 优化、重新应用 Doze 参数、等待解锁（开启）
 
-![省电模式配置](https://webp.radishzz.cc/01-oneui/13.webp)
+![省电模式配置](https://image.radishzz.cc/image/01-oneui/13.webp)
 
 > 5. 省电页面-启用系统省电程序、广播节能程序、快速 Doze、显示过渡动画、强制检查后台程序、启用振动、启用可选传感器（开启）
 > 6. 仅在屏幕时开启、夜间模式、亮度调节（按需开启）
@@ -421,7 +421,7 @@ One UI 在省电模式下，默认无法开启 120Hz。如果你想同时拥有�
 
 #### [App Ops](https://appops.rikka.app/)
 
-![App Ops](https://webp.radishzz.cc/01-oneui/14.webp)
+![App Ops](https://image.radishzz.cc/image/01-oneui/14.webp)
 
 一款管理应用行为的工具。它通过修改系统 appops 设置，以实现对应用的权限管理，并监控敏感权限的使用情况。相比于 Android 系统自带的权限管理，App Ops 提供了更多的权限管理选项。
 
@@ -429,7 +429,7 @@ One UI 在省电模式下，默认无法开启 120Hz。如果你想同时拥有�
 
 #### [Scene](http://vtools.omarea.com/) 
 
-![Scene](https://webp.radishzz.cc/01-oneui/15.webp)
+![Scene](https://image.radishzz.cc/image/01-oneui/15.webp)
 
 一款集合性能监测、充放电统计、应用管理、屏幕测试等许多功能的玩机工具箱，界面简洁易用。Scene 提供了三种工作模式，分别是基础模式、ADB 模式、ROOT 模式。在 Shizuku 授予权限后，即可激活 ADB 模式并免费使用上述功能（ ROOT 模式需付费)。
 
@@ -439,19 +439,19 @@ Scene 中值得一提的是强制 dex2oat 编译功能。该功能与上述提�
 
 #### [InstallerX](https://github.com/iamr0s/InstallerX)
 
-![Installer X](https://webp.radishzz.cc/01-oneui/16.webp)
+![Installer X](https://image.radishzz.cc/image/01-oneui/16.webp)
 
 安装器 X，一款干净的 Android 应用安装器。它采用 Material Design 与 Monet 取色，界面简约美观，并且支持应用降级安装、应用自动安装、更改安装样式等功能。我们可以把 InstallerX 设为默认安装器，从而取代系统自带的软件包安装程序，彻底解决烦人广告和应用检测的问题。
 
 #### [SD Maid](https://liteapks.com/sd-maid-2-se-system-cleaner.html) 
 
-![SD Maid](https://webp.radishzz.cc/01-oneui/17.webp)
+![SD Maid](https://image.radishzz.cc/image/01-oneui/17.webp)
 
 SD 女仆，一款系统清理工具。它可以帮助用户清理不必要的文件、缓存、日志等来释放存储空间。授予无障碍权限后，SD Maid 还能自动清理所有应用的缓存。这相当于你手动点进系统设置里，在每个应用的存储页面进行缓存清理。如果不是 Android 14 限制应用访问 data 文件夹，不然清浊也是一个非常棒的选择。
 
 #### [RootlessJamesDSP](https://play.google.com/store/apps/details?id=me.timschneeberger.rootlessjamesdsp&hl=zh&gl=US) 
 
-![RootlessJamesDSP](https://webp.radishzz.cc/01-oneui/18.webp)
+![RootlessJamesDSP](https://image.radishzz.cc/image/01-oneui/18.webp)
 
 一款不需要 root 的音频处理工具。它提供了丰富的音频处理功能，如动态范围压扩器、动态低音提升、多模态均衡器、声场宽度等。Sound Assistant 跟它相比简直是小巫见大巫，就算跟需要 root 的 ViPER4Android 相比，jamesDSP 也显得更加灵活和模块化，并且支持导入配置来调整参数。
 
@@ -469,11 +469,11 @@ SD 女仆，一款系统清理工具。它可以帮助用户清理不必要的�
 本篇章为进阶篇，主要介绍 Lycan 这款应用的功能、效果以及安装方法，并科普相关知识。不推荐小白尝试。
 {% endnote %}
 
-![Lycan](https://webp.radishzz.cc/01-oneui/19.webp)
+![Lycan](https://image.radishzz.cc/image/01-oneui/19.webp)
 
 Lycan 是一款专属于三星设备的应用，中文翻译为狼人，搭配狼头图标，~~我们不难看出作者是个狼人~~。它其实是 CCSWE App Manager 6.2.0 版本的汉化套娃版，目前有且仅有一个应用版本，即 5.0.0 汉化版。这两款应用几乎完全一致（如上图其实是 CCSWE ），我找到了 [CCSWE App Manager 破解版](https://apkmb.com/ccswe-app-manager-samsung/)（正版需付费）的安装包，实测可以用 Lycan 的激活方式进行安装激活，并且两者可以互相覆盖安装。
 
-![Lycan 覆盖安装 CCSWE App Manager ](https://webp.radishzz.cc/01-oneui/20.webp)
+![Lycan 覆盖安装 CCSWE App Manager ](https://image.radishzz.cc/image/01-oneui/20.webp)
 
 因此这两款应用的功能完全一致。CCSWE App Manager 在 Google Play 上的应用介绍是一款终极的软件包禁用程序和膨胀软件杀手。软件包禁用程序，是指它可以禁用应用，比如 Google 框架、Google 服务等系统应用，当你用不上又无法卸载的时候，就可以用 Lycan 来禁用它。
 
@@ -481,7 +481,7 @@ Lycan 是一款专属于三星设备的应用，中文翻译为狼人，搭配�
 
 ### Android 四大基本组件
 
-![Android 四大基本组件](https://webp.radishzz.cc/01-oneui/21.webp)
+![Android 四大基本组件](https://image.radishzz.cc/image/01-oneui/21.webp)
 
 由于安卓系统极大的开放性，有不少流氓应用会在系统内注册一堆 `Service` 服务和 `Receiver` 广播接收器常驻后台。有时候你虽然只是打开了一个 App，但是在后台已经有多个 App 服务被其链式唤醒，并且在后台猛猛运行消耗着 CPU 性能与电量，此时我们可以通过 Lycan 来解决这个问题。Lycan 可以管理以下四大基本组件：
 
@@ -547,7 +547,7 @@ Lycan 是一款专属于三星设备的应用，中文翻译为狼人，搭配�
 
 还可以搭配辅助工具 [Libchecker](https://play.google.com/store/apps/details?id=com.absinthe.libchecker&hl=en_US) 来辅助识别组件。该应用可查看 App 的四大组件及原生库，并提供相应介绍。  
 
-![Libchecker](https://webp.radishzz.cc/01-oneui/22.webp)
+![Libchecker](https://image.radishzz.cc/image/01-oneui/22.webp)
 
 ### 如何禁用组件
 
@@ -557,11 +557,11 @@ Lycan 是一款专属于三星设备的应用，中文翻译为狼人，搭配�
 
 这个方法适用于绝大多数不需要实时接收消息的国产 App，例如抖音、微博等。以抖音为例。在正常情况下，抖音在退出前台后，仍在后台运行，内存占用高达 1.7 G。
 
-![图片](https://webp.radishzz.cc/01-oneui/23.gif)
+![图片](https://image.radishzz.cc/image/01-oneui/23.gif)
 
 在全部禁用的情况下，抖音在退出前台后，立刻进入缓存，缓存占用减少到 0.9 G。
 
-![图片](https://webp.radishzz.cc/01-oneui/24.gif)
+![图片](https://image.radishzz.cc/image/01-oneui/24.gif)
 
 禁用 App 的所有服务和广播接收器以后，效果堪比墓碑模式：
 - 应用退出后立刻进入缓存，不在后台驻留服务进程
@@ -833,11 +833,11 @@ Lycan 是利用 Samsung Knox SDK 进行工作的，但它无法直接获取 Knox
 11. 更新系统前，要解禁所有应用吗？
 可以不用，即使是大版本更新，实测也没有影响。
 12. 炼妖壶不支持 Android 工作资料特性？
-改用 [安全文件夹](https://webp.radishzz.cc/01-oneui/30.webp) 进行安装。
+改用 [安全文件夹](https://image.radishzz.cc/image/01-oneui/30.webp) 进行安装。
 
 ### 使用方法
 
-![Lycan 使用方法](https://webp.radishzz.cc/01-oneui/25.webp)
+![Lycan 使用方法](https://image.radishzz.cc/image/01-oneui/25.webp)
 
 - **禁用应用**：主页-点击应用图标-点击左下方 `Disable` 禁用或 `Enable` 解禁（右上角可全选）
 - **禁用组件**：主页-点击应用图标-点击组件图标-点击下方 `Disable` 禁用或 `Enable` 解禁（右上角可全选）
@@ -845,7 +845,7 @@ Lycan 是利用 Samsung Knox SDK 进行工作的，但它无法直接获取 Knox
 - **导入/导出应用禁用方案**：主页-侧边栏-最爱-右上角三个点-导入/导出
 - **导入/导出组件禁用方案**：主页-侧边栏-历史记录-右上角三个点-导入/导出
 
-![Lycan 图标介绍](https://webp.radishzz.cc/01-oneui/26.webp)
+![Lycan 图标介绍](https://image.radishzz.cc/image/01-oneui/26.webp)
 
 
 
@@ -856,7 +856,7 @@ Lycan 是利用 Samsung Knox SDK 进行工作的，但它无法直接获取 Knox
 本篇章为进阶篇，主要介绍 Adhell 3 这款应用的功能与安装方法。
 {% endnote %}
 
-![Adhell 3](https://webp.radishzz.cc/01-oneui/27.webp)
+![Adhell 3](https://image.radishzz.cc/image/01-oneui/27.webp)
 
 Adhell 3 也是一款专属于三星设备的应用，中文翻译为广告地狱，顾名思义其主打功能为去广告。它最初是由三星开发者 FiendFyre 开发，后因一些原因被迫下架。随后推出了 Adhell 2，但在一段时间后也停止了服务。直到 2017 年 Adhell 3 才出现。
 
@@ -953,7 +953,7 @@ Adhell 3 从 2017 年至今已经年久失修，在 One UI 升级到 6.0 后又�
 
 #### DNS 广告拦截
 
-![Adguard DNS](https://webp.radishzz.cc/01-oneui/28.webp)
+![Adguard DNS](https://image.radishzz.cc/image/01-oneui/28.webp)
 
 注册 [Adguard DNS](https://adguard-dns.io/) 后，点击连接新设备，如图设置私密 DNS 提供商主机名即可。如果想提升拦截效果，可以在 Adguard DNS 的服务器设置中添加以下拦截列表：
 
@@ -966,7 +966,7 @@ Adhell 3 从 2017 年至今已经年久失修，在 One UI 升级到 6.0 后又�
 
 #### ACL4SSR 广告拦截规则
 
-![ACL4SSR](https://webp.radishzz.cc/01-oneui/29.webp)
+![ACL4SSR](https://image.radishzz.cc/image/01-oneui/29.webp)
 
 进入 [订阅转换页面](https://acl4ssr-sub.github.io/)，如图进行订阅链接转换，其原理是在你的 VPN 订阅链接里添加 ACL4SSR 广告拦截规则。它仅在 VPN 开启时生效。
 
@@ -975,7 +975,7 @@ Adhell 3 从 2017 年至今已经年久失修，在 One UI 升级到 6.0 后又�
 
 ## 总结
 
-![One UI](https://webp.radishzz.cc/01-oneui/01.webp) 
+![One UI](https://image.radishzz.cc/image/01-oneui/01.webp) 
 
 刚开始写这篇文章，只是想在 One UI 6.1 更新之前，捋一遍新系统的设置流程，方便自己刷机后进行恢复。结果花了好几天，写完一看都 1w+ 字数了，所以就整理成《优化指南》的形式分享出来，方便各位朋友进行参考。
 
