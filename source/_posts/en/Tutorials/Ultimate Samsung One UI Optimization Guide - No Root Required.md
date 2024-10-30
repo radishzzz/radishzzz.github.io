@@ -1,7 +1,7 @@
 ---
 title: Ultimate Samsung One UI Optimization Guide
 date: 2024-10-30
-updated: 2024-10-31
+updated: 2024-10-30
 categories:
   - en
   - Tutorials
@@ -12,7 +12,6 @@ tags:
 thumbnail: 'https://image.radishzz.cc/image/01-oneui/01.webp'
 excerpt: The ultimate guide to take you from zero to hero.
 abbrlink: d88c9984
-date: 2024-10-30 00:00:00
 ---
 
 
