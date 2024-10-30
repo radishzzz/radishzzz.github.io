@@ -919,7 +919,7 @@ If you like this guide, feel free to buy me a coffee. I'll be happy to answer an
 ![qrcode-alipay](https://image.radishzz.cc/image/qrcode-alipay.webp)
 <!-- endtab -->
 <!-- tab Wechat-->
- ![qrcode-wechat](https://image.radishzz.cc/image/qrcode-wechat.webp)
+![qrcode-wechat](https://image.radishzz.cc/image/qrcode-wechat.webp)
 <!-- endtab -->
 {% endtabs %}
 {% endfolding %}
