@@ -19,6 +19,730 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Ultimate Samsung One UI Optimization Guide</title>
+    <url>/posts/d88c9984/</url>
+    <content><![CDATA[
+  <div class="note p-4 mb-4 rounded-small info">
+    <p><i class="fa-solid fa-earth-americas mr-2"></i>This article is also available in <a href="../../posts/384776b2/">简体中文</a>.</p>
+
+  </div>
+
+
+  <div class="note p-4 mb-4 rounded-small info">
+    <p><i class="fa-solid fa-circle-info mr-2"></i>View table of contents by switching to Desktop site.</p>
+
+  </div>
+
+<p>This article is a mega root-free optimization guide for Samsung One UI, which is designed to help you improve your device’s battery life and smoothness, and solve the problems of excessive power consumption, lagging and frame dropping. The guide describes various optimization methods and principles in detail. By following these methods, your samsung device will get superb battery life and a silky smooth experience, as if it has been reborn!</p>
+<p>This guide is based on One UI 6.1, and has been remodeled by combining a lot of experience from previous users and personal experience. It’s very long and will take about 30 minutes to read. You can get a general idea of what to expect by looking at the table of contents on the right. If you’re ready, let’s get started!</p>
+<h2 id="The-Wiping-and-Flashing"><a href="#The-Wiping-and-Flashing" class="headerlink" title="The Wiping and Flashing"></a>The Wiping and Flashing</h2>
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>This chapter introduces that the effect and method of Wipe Data and Cache and Flashing ROM. This is not a required step unless you are a professional.</p>
+
+  </div>
+
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/02.webp" alt="ROM Flashing">  </p>
+<p>To decorate a house, it is best to start with a clean house. Similarly, if you want to optimize your device, the best place to start is with a clean system. A clean system can lay a good software foundation for the device, avoiding the impact of application uninstallation residues, system upgrade conflicts, device cache accumulation and other issues. So how do you get a clean system? There are three ways:</p>
+<blockquote>
+<ul>
+<li><strong>Factory Reset</strong>: Removes all user data, apps, personalization settings, restoring the device to its original factory state.</li>
+<li><strong>Wipe Data and Cache</strong>: Performs two wipe operations: wipe data&#x2F;factory reset and wipe cache partition.</li>
+<li><strong>Flashing ROM</strong>: Installs a system firmware to completely reinstall the device’s operating system.</li>
+</ul>
+</blockquote>
+<p><strong>Ranking of cleaning results: Flashing ROM &gt; Wipe Data and Cache &gt; Factory Reset</strong>. For most people, Factory Reset is enough. But for those of you who are able to read this article, you should not be limited to just that. Next I will describe the exact steps of Wipe Data and Cache and Flashing ROM. Newbies can try to simply Wipe Data and Cache, while veterans can just Flashing ROM. Please remember to backup important data before operation!</p>
+<h3 id="Wipe-Data-and-Cache"><a href="#Wipe-Data-and-Cache" class="headerlink" title="Wipe Data and Cache"></a>Wipe Data and Cache</h3><p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/03.webp" alt="Recovery Mode"></p>
+<blockquote>
+<ol>
+<li>Log out of your Samsung account and Google account and switch off your phone.</li>
+<li>Press and hold the Power button and Volume + button while connecting to the computer with the data cable to enter the interface as above.</li>
+<li>Select <code>Wipe data/factory reset</code> and then select <code>Factory data reset</code> to confirm.</li>
+<li>Select <code>Wipe cache partition</code> then select <code>Yes</code> to confirm.</li>
+<li>Select <code>Reboot system now</code>.</li>
+</ol>
+</blockquote>
+<h3 id="Flashing-ROM"><a href="#Flashing-ROM" class="headerlink" title="Flashing ROM"></a>Flashing ROM</h3><p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/04.webp" alt="Flash Tool for Samsung Devices - Odin3">  </p>
+<h4 id="Required-Tools"><a href="#Required-Tools" class="headerlink" title="Required Tools"></a>Required Tools</h4><ul>
+<li><a class="link"   href="https://developer.samsung.com/android-usb-driver" >Samsung Android USB Driver for Windows <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://odindownloader.com/" >Flash Tool for Samsung Devices Odin3 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>Samsung Firmware download from <a class="link"   href="https://samfirmtool.com/" >SamFirm <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> <a class="link"   href="https://github.com/SlackingVeteran/frija" >Frijia <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> <a class="link"   href="https://github.com/zacharee/SamloaderKotlin" >Bifrost <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> <a class="link"   href="https://samfw.com/" >SamFw <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> </li>
+<li><a class="link"   href="https://youtu.be/vWX1fcrPeCA?si=kcBz6XiCUU4nlwQw" >Recommended Video Tutorials <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+<h4 id="Complete-Steps"><a href="#Complete-Steps" class="headerlink" title="Complete Steps"></a>Complete Steps</h4><blockquote>
+<ol>
+<li>Log out of your Samsung account and Google account and switch off your phone.</li>
+<li>Install the above USB Driver and Odin3 on your computer.</li>
+<li>Download the correct firmware and unzip it to get <code>BL</code>, <code>AP</code>, <code>CP</code>, <code>CSC</code>, <code>USERDATA</code> 5-piece set.</li>
+<li>Open Odin3, select <code>BL</code>, <code>AP</code>, <code>CP</code>, <code>CSC</code> and import the files with corresponding names. It will take about three minutes to import <code>AP</code>, just be patient.</li>
+<li>With the device switched off, press and hold the Volume + and Volume - keys at the same time and connect the device to the computer with the data cable, then release when the screen lights up. When the download icon appears, press the Volume + key again to enter the Downloading mode.</li>
+<li>Check the <code>ID:COM</code> box on the top left corner of the Odin3, if it shows <code>0:COM+number</code>, it means the device is connected successfully, click <code>Start</code> to start flashing.</li>
+<li>When Odin3 shows <code>PASS</code>, it means the flashing is completed and the device will reboot automatically.</li>
+</ol>
+</blockquote>
+<h2 id="Application-Installation"><a href="#Application-Installation" class="headerlink" title="Application Installation"></a>Application Installation</h2>
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>This chapter suggests that we should avoid installing the latest version of the application.</p>
+
+  </div> 
+
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/05en.webp" alt="Application">  </p>
+<p>When setting up a new phone or after flashing a new Rom, I recommend against directly installing apps from the app store or using Smart Switch Mobile to restore apps, as this automatically installs the latest versions.</p>
+<p>You might wonder: “Aren’t the latest versions good?” Actually, no. Most apps become increasingly bloated with updates. They may add annoying ads or unnecessary new features that consume more CPU power and battery life, which is something we want to avoid.</p>
+<p>Using older versions of apps is a smart approach, and it’s best to avoid updating them unnecessarily. Older versions typically maintain core functionalities while using fewer system resources, helping prevent your device from becoming sluggish.</p>
+<p>Besides older versions, consider open-source alternatives and cracked apps. Open-source alternatives usually offer cleaner interfaces and additional features, like <a class="link"   href="https://f-droid.org/en/packages/org.schabi.newpipe/" >NewPipe <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for example. Cracked apps can give you access to premium features at no cost, such as <a class="link"   href="https://liteapks.com/spotify-2.html" >Spotify Premium <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h3 id="Download-Sources"><a href="#Download-Sources" class="headerlink" title="Download Sources"></a>Download Sources</h3><p>Here are some reliable sources for finding app packages. If you’re willing to put in the effort, consider building your own collection of older app versions. This will also make future phone switches much easier.</p>
+<p>Recommended Priority:<br><strong>Older Versions &gt; Open-Source Alternatives &gt; Modified Versions</strong></p>
+<blockquote>
+<ul>
+<li><a class="link"   href="https://www.apkmirror.com/" >Apkmirror <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>（Google Play Store Mirror）</li>
+<li><a class="link"   href="https://f-droid.org/packages/com.looker.droidify/" >Droid-ify <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>（F-Droid）</li>
+<li><a class="link"   href="https://liteapks.com/" >LiteApks <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>（Cracked Apps）</li>
+<li><a class="link"   href="https://www.123pan.com/s/2xiAjv-fBzPh.html" >My Collection <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>（For Reference Only）</li>
+</ul>
+</blockquote>
+<h2 id="System-Settings"><a href="#System-Settings" class="headerlink" title="System Settings"></a>System Settings</h2>
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>This guide covers non-essential features in your system settings and provides recommendations on which ones to enable or disable.</p>
+
+  </div>
+
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/06.webp" alt="System Settings">  </p>
+<p>You can locate these features by following our step-by-step guide or by using the search function in Settings. Keep any default settings that you find useful. Since feature names and locations may vary between system versions, please look for similar options on your device.</p>
+<ol>
+<li><p><strong>Samsung Account</strong></p>
+<blockquote>
+<ul>
+<li>Security and privacy - Personalization - Stop customizing all devices (Stop all personalization)</li>
+<li>Security and privacy - Get news and special offers (Off)</li>
+<li>Samsung Cloud - All options (Enable as needed)</li>
+<li>Galaxy AI - Process data only on device (Enable as needed)</li>
+<li>Find My Mobile - All options (Enable as needed)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Connections</strong></p>
+<blockquote>
+<ul>
+<li>Wi-Fi - Three dots menu - Intelligent Wi-Fi - Show network quality info (On) - Other features (All off)</li>
+<li>Ultra-Wideband (UWB) (Off)</li>
+<li>Data usage - Data saver (Off)</li>
+<li>More connection settings - Nearby device scanning (Off)</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<p>Regarding Wi-Fi power saving mode, although it claims to reduce battery consumption, it also decreases data throughput. The device only sends and receives data during periodic wake-ups, which may affect real-time message reception in apps like WhatsApp and Messenger , so it’s recommended to turn it off.</p>
+<ol start="3">
+<li><p><strong>Connected devices</strong></p>
+<blockquote>
+<ul>
+<li>All features (Enable as needed)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Notifications</strong></p>
+<blockquote>
+<ul>
+<li>App notifications (Enable as needed)</li>
+<li><ul>
+<li>Advanced settings - Manage notification categories per app (on)</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Display</strong></p>
+<blockquote>
+<ul>
+<li>Dark mode (Enable as needed)</li>
+<li>Adaptive brightness (Enable as needed)</li>
+<li>Screen resolution (QHD+ recommended)</li>
+<li>Screen timeout - Keep screen on while viewing (Off)</li>
+<li>Navigation bar - Circle to  Search (Enable as needed)</li>
+<li>Accidental touch protection (off)</li>
+<li>Touch sensitivity (Off)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Battery</strong></p>
+<blockquote>
+<ul>
+<li>Battery protection (Enable as needed)</li>
+<li>Charging settings - All options (All on)<br>  <em><strong>Power saving ↓</strong></em></li>
+<li>Limit CPU speed to 70% (On)</li>
+<li>Other options (All off)</li>
+<li>Three dots menu - Adaptive power saving (Off)<br>  <em>**<strong>Background usage limits ↓</strong></em></li>
+<li>Three dots menu - Adaptive battery (Off)</li>
+<li>Put unused apps to sleep (On)</li>
+<li>First add all apps to Deep sleeping apps, then move frequently used apps to Sleeping apps, leave Never auto sleeping apps empty</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<p>Regarding battery settings, I’ve turned off Adaptive power saving&#x2F;battery and actively manage background processes by assigning apps to sleeping or deep sleeping states. If you find this troublesome, you can keep the default options.</p>
+<ol start="7">
+<li><p><strong>Home screen</strong></p>
+<blockquote>
+<ul>
+<li>Add media page to Home screen (Off)</li>
+<li>Lock Home screen layout (On)</li>
+<li>Swipe down for notification panel (On)</li>
+<li>Search from Home (Off)</li>
+<li>Rotate to landscape mode (Off)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Lock screen and AOD</strong></p>
+<blockquote>
+<ul>
+<li>Extended unlock - On-body detection (off)</li>
+<li>Always On Display (Enable as needed)</li>
+<li>Touch and hold to edit (Off)<br>  <em><strong>Secure lock settings ↓</strong></em></li>
+<li>Auto lock after screen turns off (5 seconds)</li>
+<li>Lock instantly with Side button (On)</li>
+<li>Auto factory reset, Lock network and security, Show lockdown option (Off)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Security and privacy</strong></p>
+<blockquote>
+<ul>
+<li>Auto blocker (All off)</li>
+<li>More security settings - Install unknown apps (All denied, enable as needed)</li>
+<li>More security settings - Galaxy system app updates (Off)</li>
+<li>Permission manager (Check individually, disable unnecessary permissions)</li>
+<li>Additional privacy controls - Alert When clipboard accessed (on)</li>
+<li>More privacy settings - Send diagnostic data, Android personalization services, Usage and diagnostics (Off)<br>  <em><strong>App security ↓</strong></em></li>
+<li>App Protection - Three dots menu - App Protection Settings - Auto scan app daily, Auto scan when installing apps (All off)</li>
+<li>Google Play Protect - Settings - Scan apps with Play Protect, Improve harmful app detection (Off)<br>  <em><strong>Biometrics ↓</strong></em></li>
+<li>Show unlock transition effect (Enable as needed)</li>
+<li>Fingerprints - Delete all registered fingerprints, alternately register all fingers into one fingerprint entry, ensure complete coverage with each press and maintain pressure until prompted to lift</li>
+<li>Fingerprints - Fingerprint always on (Enable as needed)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Location</strong></p>
+<blockquote>
+<ul>
+<li>Location services - All options (All off)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Safety and emergency</strong></p>
+<blockquote>
+<ul>
+<li>All options (All off)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Google</strong></p>
+<blockquote>
+<ul>
+<li>Find My Device (Off)</li>
+<li>All services - Ads - Delete advertising ID - Ad privacy - All options (Off)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Advanced features</strong></p>
+<blockquote>
+<ul>
+<li>Smart suggestions (Off)</li>
+<li>S Pen - More S Pen settings - S Pen unlock, Allow multiple S Pens, Keep S Pen connected (Off)</li>
+<li>One-handed mode (Enable as needed)<br>  <em><strong>Motions and gestures ↓</strong></em></li>
+<li>Double tap to turn on screen, Double tap to turn off screen (On)</li>
+<li>Palm swipe to capture (Off)</li>
+<li>Other options (Enable as needed)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Device care</strong></p>
+<blockquote>
+<ul>
+<li>Memory - Excluded apps - Plus icon at top right (Add apps that need real-time messages)</li>
+<li>Memory - RAM Plus (On for 8GB, Off for 12GB)</li>
+<li>Performance profile (Light)</li>
+<li>Auto optimization - Auto restart (Off)</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<p>Regarding RAM Plus, it uses storage space as additional RAM, which helps devices with low memory or high-load scenarios (like gaming). However, if the device has sufficient RAM, enabling RAM Plus provides no benefit and may slightly decrease device performance due to frequent data read&#x2F;write. Therefore, it’s recommended to enable for 8GB and disable for 12GB models.</p>
+<ol start="15">
+<li><p><strong>Apps</strong></p>
+<blockquote>
+<ul>
+<li>Click the icon in the center on the right - Show system apps (On)</li>
+<li>Search One UI Home and open - Battery (Unrestricted)</li>
+<li>Search System UI and open - Battery (Unrestricted)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Accessibility</strong></p>
+<blockquote>
+<ul>
+<li>Vision enhancements - Reduce transparency and blur (Enable as needed)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Software update</strong></p>
+<blockquote>
+<ul>
+<li>Auto download over Wi-Fi (Off)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Developer options</strong></p>
+<blockquote>
+<ul>
+<li><em><strong>How to open: About phone - Software information - Tap Build number repeatedly</strong></em></li>
+<li>Logger buffer sizes (Off)</li>
+<li>System tracing - Trace debuggable apps (Off)</li>
+<li>Wi-Fi scan throttling (On)</li>
+<li>Suspend execution for cached apps (Keep device default, which equals On)</li>
+<li>Predictive back animations (On)</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h3 id="Other-Settings"><a href="#Other-Settings" class="headerlink" title="Other Settings"></a>Other Settings</h3><ol start="19">
+<li><p><strong>Turn off automatic app updates</strong></p>
+<blockquote>
+<ul>
+<li><em><strong>Open Play Store - Profile icon - Settings - Network preferences</strong></em></li>
+<li>Auto-update apps (Off)</li>
+<li>Auto-play videos (Off)<br>  <em><strong>Open Galaxy Store - Menu icon - Settings</strong></em></li>
+<li>Auto update apps (Never)</li>
+<li>Auto play videos (Never)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Limit background running of apps</strong></p>
+<blockquote>
+<ul>
+<li><em><strong>Only for infrequently used apps</strong></em></li>
+<li>Return to home screen - Long press app - Tap ⊙ in top right</li>
+<li>Mobile data - Allow background data usage (Off)</li>
+<li>Battery (Restricted)</li>
+<li>Assign to sleeping or deep sleeping as needed</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Keep apps running in background</strong></p>
+<blockquote>
+<ul>
+<li><em><strong>Only for apps requiring real-time messages</strong></em></li>
+<li>Return to home screen - Long press app - Tap ⊙ in top right</li>
+<li>Mobile data - Allow background data usage (On)</li>
+<li>Battery (Unrestricted)</li>
+<li>Open Settings - Search Excluded apps - Plus icon (Add apps)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Minimize app notifications</strong></p>
+<blockquote>
+<ul>
+<li><em><strong>You can keeps app notifications while hiding their status bar icons</strong></em></li>
+<li>Open Settings - Search Manage notifications categories for each app (On)</li>
+<li>Open notification panel - Long press notification - Settings - Notification categories - Tap highlighted option - Minimize notifications (On)</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h3 id="Good-Guardians-Settings"><a href="#Good-Guardians-Settings" class="headerlink" title="Good Guardians Settings"></a>Good Guardians Settings</h3><p>The following apps are from Samsung’s official Good Guardians plugin, available in the Galaxy Store. Note that these apps need to remain running in the background to be effective, please refer to step 22 for setup.</p>
+<ol start="24">
+<li><p><strong>Thermal Guardian (manages device temperature)</strong></p>
+<blockquote>
+<ul>
+<li>Heat threshold (Set to minimum)</li>
+<li>Additiional settings (Only check Limit CPU boost when heating)</li>
+<li>Regarding heat threshold, from left to right the levels are 37, 38, 39, 40, 41 degrees. There are different opinions about setting it higher or lower. I recommend setting it lower to reduce device heating.</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Memory Guardian (manage device memory)</strong></p>
+<blockquote>
+<ul>
+<li>Bottom options - Custom (Quick switching mode)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>Battery Guardian (manage device battery Health)</strong></p>
+<blockquote>
+<ul>
+<li>App power saving (On) - Enter - Three dots menu - Sleep&#x2F;Deep Sleep that you can’t find in the settings is hidden here</li>
+<li>Power saving during bedtime (On)</li>
+<li>Set sleep time (00:00-23:59)</li>
+<li>Screen Curtain is worth paying attention to</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>App Booster (improve device Performance)</strong></p>
+<blockquote>
+<ul>
+<li>Optimize after app&#x2F;system updates</li>
+<li>Recommended to run once per month</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h2 id="Shizuku"><a href="#Shizuku" class="headerlink" title="Shizuku"></a>Shizuku</h2>
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>This chapter mainly introduces Shizuku and related tool applications, along with some usage tips.</p>
+
+  </div>
+
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/07en.webp" alt="Shizuku"></p>
+<p>As the core focus of this chapter, let’s first introduce Shizuku. It enables other applications to directly access system APIs without requiring root access. Let’s take a practical example. Traditionally, if you wanted to disable Bixby Vision, you would need to root your device to gain full control. But Shizuku offers a more elegant solution. It obtains the necessary permissions through user authorization to manage system APIs. Once configured, other applications can work through Shizuku to access these system APIs, allowing them to perform advanced operations like disabling system apps, including Bixby Vision.</p>
+<blockquote>
+<ul>
+<li><a class="link"   href="https://shizuku.rikka.app/" >Official Documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://shizuku.rikka.app/download/" >App Download Page <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://shizuku.rikka.app/guide/setup/" >User Manual <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+</blockquote>
+<p>After installation, Shizuku requires user authorization before it can take control of system APIs. According to the user manual, there are three ways to start Shizuku. we typically recommend using the Wireless debugging method. Here are the specific steps:</p>
+<h3 id="Start-Shizuku"><a href="#Start-Shizuku" class="headerlink" title="Start Shizuku"></a>Start Shizuku</h3><blockquote>
+<ol>
+<li>Make sure your device is connected to Wi-Fi and Developer options is enabled.</li>
+<li>Open Shizuku and tap Pairing.</li>
+<li>Go to Developer options.</li>
+<li>Scroll down to find and enable USB debugging.</li>
+<li>Find Wireless debugging and tap to enter its submenu.</li>
+<li>Turn on Wireless debugging, then tap Pair device with pairing code.</li>
+<li>Find Shizuku in the notification panel, enter the pairing code and send.</li>
+<li>Once paired successfully, return to Shizuku’s main page and tap Start.</li>
+<li>Wait a moment, it will automatically return to the main page. When it shows Shizuku is running, the startup is successful.</li>
+<li>Open Authorized 0 applications, grant the necessary permissions.</li>
+</ol>
+</blockquote>
+<h3 id="Tool-Applications"><a href="#Tool-Applications" class="headerlink" title="Tool Applications"></a>Tool Applications</h3><p>After successfully starting Shizuku, you can enjoy using various applications that support it. Here are some that I particularly recommend.</p>
+<h4 id="Sam-Helper"><a href="#Sam-Helper" class="headerlink" title="Sam Helper"></a><a class="link"   href="https://sam-helper.en.uptodown.com/android/download" >Sam Helper <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p>Sam Helper is a specialized toolkit designed specifically for Samsung devices. This comprehensive tool offers a wide range of features including Baronmeter Test, Shizuku Terminal, and System Settings. It also integrates all applications from Good Lock and Galaxy Labs, making system customization more accessible to users. Additionally, Sam Helper enables several useful functions:</p>
+<h5 id="Check-Battery-Health"><a href="#Check-Battery-Health" class="headerlink" title="Check Battery Health"></a><strong>Check Battery Health</strong></h5><p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/08en.webp" alt="How to check battery health"></p>
+<blockquote>
+<ol>
+<li>Tap the second icon in the top-right corner to access Shizuku Terminal</li>
+<li>Enter and run the following command: <code>dumpsys battery | grep -i msave</code></li>
+<li>Check the output</li>
+<li>Fifth line: Battery cycle count 487.56</li>
+<li>Sixth line: Battery health 93%</li>
+</ol>
+</blockquote>
+<h5 id="120Hz-in-Power-Saving-Mode"><a href="#120Hz-in-Power-Saving-Mode" class="headerlink" title="120Hz in Power Saving Mode"></a><strong>120Hz in Power Saving Mode</strong></h5><p>By default, One UI doesn’t allow 120Hz refresh rate in power saving mode. If you want to enjoy both power saving benefits and 120Hz smooth display experience, you can use the following method:</p>
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/09en.webp" alt="120Hz in Power Saving Mode"></p>
+<blockquote>
+<ol>
+<li>Enable Power saving mode</li>
+<li>Go to Sam Helper - System Settings - Screen Refresh Rate (Seamless)</li>
+<li>Open the Phone app and tap any number, for example <code>0</code></li>
+<li>Tap the button on the left to start a video call</li>
+<li>Hang up after 3 seconds, and you’re done</li>
+<li>Some people will fail because there is no  video call button.</li>
+</ol>
+</blockquote>
+<h5 id="Disable-System-Updates"><a href="#Disable-System-Updates" class="headerlink" title="Disable System Updates"></a><strong>Disable System Updates</strong></h5><p>If you want to prevent system upgrades or disable  notifications to update, you can disable system updates completely.</p>
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/10en.webp" alt="Disable System Updates"></p>
+<blockquote>
+<ol>
+<li>Tap the second icon in the top-right corner to access Shizuku Terminal</li>
+<li>Enter and execute these commands separately:<br>   <code>pm disable-user com.wssyncmldm</code><br>   <code>pm disable-user com.sec.android.soagent</code></li>
+<li>To re-enable system updates, execute these commands:<br>   <code>pm enable com.wssyncmldm</code><br>   <code>pm enable com.sec.android.soagent</code></li>
+</ol>
+</blockquote>
+<h4 id="Battery-Guru"><a href="#Battery-Guru" class="headerlink" title="Battery Guru"></a><a class="link"   href="https://liteapks.com/battery-guru.html" >Battery Guru <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/11en.webp" alt="Battery Guru"></p>
+<p>Battery Guru is a comprehensive battery health management tool. It offers multiple features such as real-time current monitoring, battery capacity estimation, and app power consumption statistics to help users monitor and manage battery usage, ultimately extending battery life.</p>
+<p>Users can identify abnormal power drain through real-time current monitoring and power consumption graphs. The app also allows modification of the device’s Doze mode settings, helping devices enter deep Doze mode more quickly after screen-off to reduce standby power consumption.</p>
+<h5 id="Doze-Mode"><a href="#Doze-Mode" class="headerlink" title="Doze Mode"></a>Doze Mode</h5><p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/12en.webp" alt="Doze Mode"></p>
+<blockquote>
+<ol>
+<li>On the app’s home page, go to Settings (top-right) - Permission Manager - enable Allow post notifications and Modify system settings</li>
+<li>Open Sam Helper’s tShizuku Terminal and execute these commands one by one:<br> <code>pm grant com.paget96.batteryguru android.permission.BATTERY_STATS</code><br> <code>pm grant com.paget96.batteryguru android.permission.PACKAGE_USAGE_STATS</code><br> <code>pm grant com.paget96.batteryguru android.permission.WRITE_SECURE_SETTINGS</code><br> <code>pm grant com.paget96.batteryguru android.permission.DUMP</code></li>
+<li>App homepage - Tools at the bottom - System battery saver - Configure</li>
+<li>Doze optimization, Re-apply Doze parameters and Wait for unlock (on)</li>
+</ol>
+</blockquote>
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/13en.webp" alt="System battery saver "></p>
+<blockquote>
+<ol start="5">
+<li>Set up as shown</li>
+<li>The application needs to be kept running in the background, please refer to step 21 of the System Settings.</li>
+</ol>
+</blockquote>
+<h4 id="App-Ops"><a href="#App-Ops" class="headerlink" title="App Ops"></a><a class="link"   href="https://appops.rikka.app/" >App Ops <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/14en.webp" alt="App Ops"></p>
+<p>App Ops is a powerful application behavior management tool. It modifies system appops settings to control app permissions and monitor sensitive permission usage. Compared to Android’s built-in permission management, App Ops offers more extensive permission control options.</p>
+<p>For example, you can use App Ops to disable permissions for problematic apps, such as motion sensors, clipboard access, calendar access, and device ID reading. This helps prevent personal privacy leaks, the features not available in the default  system setting.</p>
+<h4 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a><a class="link"   href="http://vtools.omarea.com/" >Scene <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/15en.webp" alt="Scene"></p>
+<p>Scene is a comprehensive toolkit that combines performance monitoring, charging statistics, app management, screen testing, and many other features in a clean, user-friendly interface. It offers three working modes: Basic Mode, ADB Mode, and ROOT Mode. After granting Shizuku permissions, you can activate ADB Mode and use these features for free (ROOT Mode requires payment).</p>
+<h5 id="dex2oat"><a href="#dex2oat" class="headerlink" title="dex2oat"></a>dex2oat</h5><p>A notable feature in Scene is forced dex2oat compilation. While this works similarly to App Booster mentioned earlier, Scene provides more compilation modes. Using the <code>everything</code> mode for compilation can maximize device performance and smoothness.</p>
+<h4 id="SD-Maid"><a href="#SD-Maid" class="headerlink" title="SD Maid"></a><a class="link"   href="https://liteapks.com/sd-maid-2-se-system-cleaner.html" >SD Maid <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/17en.webp" alt="SD Maid"></p>
+<p>A comprehensive system cleaning tool that helps users clear unnecessary files, cache, logs and free up storage space. After granting accessibility permissions, SD Maid can automatically clean cache for all apps which equivalent to manually clearing cache for each app through system settings.</p>
+<h4 id="RootlessJamesDSP"><a href="#RootlessJamesDSP" class="headerlink" title="RootlessJamesDSP"></a><a class="link"   href="https://play.google.com/store/apps/details?id=me.timschneeberger.rootlessjamesdsp" >RootlessJamesDSP <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/18en.webp" alt="RootlessJamesDSP"></p>
+<p>An advanced audio processing tool that doesn’t require root access. It offers extensive audio processing features including:</p>
+<ul>
+<li>Dynamic range compression&#x2F;expansion</li>
+<li>Dynamic bass boost</li>
+<li>Multi-mode equalizer</li>
+<li>Soundfield expansion</li>
+</ul>
+<p>Compared to Sound Assistant, it’s far more capable. Even when compared to root-required ViPER4Android, JamesDSP proves to be more flexible and modular, with support for importing configurations to adjust parameters.</p>
+<p>Users can leverage it to personalize device audio and optimize sound quality for both speakers and headphones. The main drawbacks are that it needs to run constantly in the background and doesn’t support Spotify.</p>
+<h3 id="App-Collection"><a href="#App-Collection" class="headerlink" title="App Collection"></a><a class="link"   href="https://github.com/ThePBone/awesome-shizuku" >App Collection <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h3><p>The collection includes virtually all utility apps that support Shizuku functionality. You can explore and try them out.</p>
+<h2 id="Lycan"><a href="#Lycan" class="headerlink" title="Lycan"></a>Lycan</h2>
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>This is an advanced guide that introduces the features and installation methods of Lycan, along with related technical knowledge. Not recommended for beginners.</p>
+
+  </div>
+
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/19.webp" alt="Lycan"></p>
+<p>Lycan is an application exclusively designed for Samsung devices. It’s essentially a repackaged version of CCSWE App Manager 6.2.0, with only one Version 5.0.0 currently available. These two applications are identical (as shown in the image above, which is actually CCSWE). I’ve found a cracked version of <a class="link"   href="https://apkmb.com/ccswe-app-manager-samsung/" >CCSWE App Manager <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> (the original version requires payment). Testing confirms that it can be installed and activated using Lycan’s activation method, and the two apps can be installed over each other.</p>
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/20.webp" alt="Lycan installing over CCSWE App Manager"></p>
+<p>Both applications share identical functionality. According to CCSWE App Manager’s Google Play description, it’s designed for users who want to disable applications and packages to improve performance. This allows us to disable certain system applications that cannot be uninstalled. Additionally, Lycan can disable an app components to forcefully manage bloated, intrusive applications, effectively optimizing your device.</p>
+<h3 id="App-Components"><a href="#App-Components" class="headerlink" title="App Components"></a>App Components</h3><p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/21.webp" alt="Four Basic App Components"></p>
+<p>Due to Android’s highly open nature, many problematic applications register multiple <code>Services</code> and <code>Receivers</code> to maintain background presence. Sometimes, when you open just one app, it triggers a chain reaction that awakens multiple app services in the background, consuming CPU resources and battery power. Lycan helps address this issue by managing Android’s four fundamental components:</p>
+<ul>
+<li><p><strong>Activity</strong><br>An <code>Activity</code> represents the user interface window for interaction with the application. Each <code>Activity</code> corresponds to a screen where users can perform specific operations. When opening a new screen, the previous <code>Activity</code> is paused and pushed onto the back stack, allowing users to return to previously opened screens through the back navigation.</p>
+</li>
+<li><p><strong>Service</strong><br><code>Services</code> perform long-running operations in the background without providing a user interface. For example, music playback continues in the background even when users switch to other <code>Activities</code>.</p>
+</li>
+<li><p><strong>Broadcast Receiver</strong><br><code>Broadcast Receivers</code> listen for and respond to system-wide or application-specific broadcast messages. Applications can use them to react to external events (such as incoming calls or network connectivity changes) and trigger responses like launching <code>Activities</code> or <code>Services</code>.</p>
+</li>
+<li><p><strong>Content Provider</strong><br><code>Content Providers</code> manage data storage and retrieval, enabling data sharing between applications without requiring storage permissions.</p>
+</li>
+</ul>
+<h5 id="Effects-of-Component-Disabling"><a href="#Effects-of-Component-Disabling" class="headerlink" title="Effects of Component Disabling"></a>Effects of Component Disabling</h5><ul>
+<li>Disabling Activities: Disabling an <code>Activity</code> prevents the corresponding application screens from displaying or functioning properly. Only consider disabling <code>Activities</code> that are non-essential to core functionality or don’t require user interaction, such as advertising pages or update screens.</li>
+<li>Disabling Services: <code>Services</code> are fundamental for background operations. Disabling them reduces RAM usage during app operation and minimizes CPU wake-ups when the app is in the background.</li>
+<li>Disabling Broadcast Receivers: By disabling unnecessary <code>Broadcast Receivers</code>, you can prevent unrelated applications from being awakened when system events occur.</li>
+<li>Disabling Content Providers: Disabling <code>Content Providers</code> prevents inter-application data sharing. This is generally not recommended as it may break essential functionality that relies on data exchange between apps.</li>
+</ul>
+<h5 id="Component-Identification"><a href="#Component-Identification" class="headerlink" title="Component Identification"></a>Component Identification</h5><p>Disabling unnecessary components can significantly improve app performance and reduce memory usage after app closure. However, to disable components effectively, we must first understand how to identify them. Components can be preliminarily assessed by analyzing their naming patterns, which helps determine whether disabling is appropriate. Here are some common keywords:</p>
+<ul>
+<li>Ad&#x2F;Ads (advertise)</li>
+<li>Auth（Third-party authentication）</li>
+<li>Backup</li>
+<li>Camera</li>
+<li>Debug</li>
+<li>Dialog</li>
+<li>Download</li>
+<li>f（Location services）</li>
+<li>FloatWindow</li>
+<li>Gcm (Google Cloud Messaging)</li>
+<li>Install</li>
+<li>Media</li>
+<li>Message</li>
+<li>Notify</li>
+<li>Notification</li>
+<li>Pay</li>
+<li>Push</li>
+<li>Sdk (Connect different applications)</li>
+<li>Share</li>
+<li>Sync</li>
+<li>Update</li>
+<li>Upload</li>
+<li>Wallet</li>
+<li>Widget</li>
+</ul>
+<h5 id="LibChecker"><a href="#LibChecker" class="headerlink" title="LibChecker"></a>LibChecker</h5><p>For more precise component identification, you can use <a class="link"   href="https://play.google.com/store/apps/details?id=com.absinthe.libchecker&hl=en_US" >LibChecker <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> as a supplementary tool. This application allows you to view and analyze an app’s four components and native libraries, providing detailed descriptions for each.</p>
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/22.webp" alt="Libchecker"></p>
+<p>However, these optimizations come with risks. After disabling components, applications may experience issues such as white screens or crashes. You can troubleshoot by identifying and re-enabling the relevant components, or simply uninstall and reinstall the application to restore normal functionality.</p>
+<h3 id="How-to-Disable-Application"><a href="#How-to-Disable-Application" class="headerlink" title="How to Disable Application"></a>How to Disable Application</h3><p>Disabling applications carries a higher risk compared to disabling components. Many users attempt to improve battery life by disabling system applications they believe are unnecessary. However, if a critical system process is disabled, the device may become stuck at the boot screen and fail to enter the system, leaving a factory reset as the only solution.</p>
+<p>Therefore, it’s recommended to reference verified disable lists and customize them according to your specific needs. You can refer to the <a class="link"   href="https://www.minitool.com/news/list-of-samsung-bloatware-safe-to-remove.html" >List of Samsung Bloatware Safe to Remove <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> as a guide. I’ve also shared my personal <a class="link"   href="https://1drv.ms/u/c/faeb19ea3240a386/EUBpSKSkfyBKqSxuuFXYjG4B9LoYWiga64fu8PA1dhss8w" >Disable List <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>, which can be directly imported into Lycan. Remember to adjust the list based on your individual requirements.</p>
+<details class="white" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Error List </summary>
+              <div class='content'>
+              <blockquote><p>Apps: com.samsung.android.app.appsedge<br>Split-screen multitasking not available.</p></blockquote><blockquote><p>Emergency Launcher: com.sec.android.emergencylauncher<br>Power saving mode not available.</p></blockquote><blockquote><p>Sound Quality and Effects: com.sec.android.app.soundalive<br>Global Dolby effects cannot be enabled .</p></blockquote><blockquote><p>Samsung Core Services: com.samsung.android.scs<br>Side panel rectangular screenshots unable to automatically detect and select images. Contact search unavailable, cannot select screenshots manually.</p></blockquote><blockquote><p>Samsung Multi Connectivity: com.samsung.android.mcfserver<br>Multi-connection unavailable, headphones cannot switch freely.</p></blockquote><blockquote><p>Tethering: com.google.android.networkstack.tethering<br>App unresponsive when opened, Settings-Connections crashes.</p></blockquote><blockquote><p>Samsung Device Health Manager Service: com.sec.android.sdhms<br>Samsung Device Health crashes on launch.</p></blockquote><blockquote><p>Settings Bixby: com.samsung.android.app.settings.bixby<br>Samsung Cloud backup and restore unavailable.</p></blockquote><blockquote><p>Factory Test Provider: com.samsung.android.app.providers.factory<br><em>#0</em># code not working.</p></blockquote><blockquote><p>SumeNNService: com.samsung.android.sume.nn.service<br>Photo Remaster Service: com.samsung.android.photoremasterservice<br>Photo remastering in Gallery unavailable.</p></blockquote><blockquote><p>DRParser Mode: com.sec.android.app.parser<br>Gallery remastering and <em>#0</em># code not working.</p></blockquote><blockquote><p>Service Mode: com.sec.android.app.servicemodeapp<br>*#06# code not working.</p></blockquote><blockquote><p>Sec Media Storage: com.samsung.android.providers.media<br>Screenshots blocked due to security policy.</p></blockquote><blockquote><p>Network Manager: com.google.android.networkstack<br>Mobile network unavailable.</p></blockquote><blockquote><p>VPN Dialogs: com.android.vpndialogs<br>VPN service unavailable.</p></blockquote><blockquote><p>Media: com.google.android.providers.media.module<br>File access denied.</p></blockquote><blockquote><p>Key Chain: com.android.keychain<br>Cannot access Security &amp; Privacy - Other Security Settings.</p></blockquote><blockquote><p>Input Devices: com.android.inputdevices<br>Reduced screen sampling rate, touch response lag.</p></blockquote><blockquote><p>WLAN Test: com.sec.android.app.wlantest<br>WiFi auto-reconnect not working.</p></blockquote><blockquote><p>Captive Portal Login: com.google.android.captiveportallogin<br>Cannot log into WiFi networks.</p></blockquote><blockquote><p>Global Post ProcMgr: com.samsung.android.globalpostprocmgr<br>Camera preview abnormal after taking photos.</p></blockquote><blockquote><p>Tx Pwr Admin: vendor.qti.data.txpwradmin<br>Fast charging not working.</p></blockquote><blockquote><p>Biometrics: com.samsung.android.biometrics.app.setting<br>Cannot register fingerprints.</p></blockquote><blockquote><p>Call Settings: com.samsung.android.app.telephonyui<br>Cannot switch SIM cards and mobile data in status bar, mobile network options missing in settings.</p></blockquote><blockquote><p>Ifaa Manager Application: org.ifaa.aidl.manager<br>Alipay fingerprint payment unavailable.</p></blockquote><blockquote><p>Sec Video Engine Service: com.sec.sve<br>Camera cannot be activated during voice calls.</p></blockquote><blockquote><p>CMH Provider: com.samsung.cmh<br>App crashes when saving remastered photos.</p></blockquote><blockquote><p>Badge Provider: com.sec.android.provider.badge<br>SMS notification badges not showing.</p></blockquote><blockquote><p>Samsung Keyboard: com.samsung.android.honeyboard<br>Side screen clipboard unavailable.</p></blockquote><blockquote><p>Call BG Provider: com.samsung.android.callbgprovider<br>Call background missing.</p></blockquote><blockquote><p>Intent Resolver: com.android.intentresolver<br>Share menu crashes.</p></blockquote><blockquote><p>Samsung Text-to-Speech Engine: com.samsung.SMT<br>Handwriting input not working.</p></blockquote><blockquote><p>Settings Suggestions: com.android.settings.intelligence<br>Battery widget unavailable</p></blockquote><blockquote><p>Always On Display: com.samsung.android.app.aodservice<br>Screen-off notifications unavailable.</p></blockquote><blockquote><p>Container Service: com.samsung.android.container<br>Noise cancellation and ambient sound options missing in Bluetooth settings.</p></blockquote><blockquote><p>Cell Broadcast Service: com.google.android.cellbroadcastservice<br>Cannot send MMS, network error.</p></blockquote><blockquote><p>Sticker Center: com.samsung.android.stickercenter<br>Gallery editor crashes.</p></blockquote><blockquote><p>Handwriting Service: com.samsung.android.sdk.handwriting<br>SPen writing input not working.</p></blockquote><blockquote><p>Samsung Text-to-Speech Engine: com.samsung.SMT<br>Speech-to-text not working.</p></blockquote><blockquote><p>Factory Camera: com.sec.factory.camera<br>Filter Provider　com.samsung.android.provider.filterprovider<br>Camera filter selection and addition abnormal.</p></blockquote><blockquote><p>App Linker: com.sec.android.app.applinker<br>App badges not working.</p></blockquote><blockquote><p>TxPwrAdmin: vendor.qti.data.txpwradmin<br>Fast charging not working.</p></blockquote><blockquote><p>Soter Sskds Service: com.samsung.android.sskds<br>Cannot enable fingerprint payment.</p></blockquote><blockquote><p>Spritewallipaper: com.samsung.android.wallpaper.live<br>Live wallpaper not working.</p></blockquote><blockquote><p>Samsung Editing Assets: com.sec.android.app.ve.vebgm<br>No sound in Gallery Stories.</p></blockquote><blockquote><p>Companion Device Manager: com.android.companiondevicemanager<br>Watch reconnection issues.</p></blockquote><blockquote><p>Wallpaper Services: com.samsung.android.dynamicock<br>Cannot display content directly on lock screen.</p></blockquote><blockquote><p>Android Shared Library: com.google.android.ext.shared<br>Smart Suggestions: com.samsung.android.smartsuggestions<br>Cannot automatically detect and select URLs.</p></blockquote><blockquote><p>Bluetooth Pairing Request: com.android.settings.bluetooth.BluetoothPairingRequest<br>Headphone pairing popup not showing.</p></blockquote><blockquote><p>Continuity Service: com.samsung.android.mcfds<br>Multi-screen connectivity not working.</p></blockquote><blockquote><p>Contacts Storage: com.samsung.android.providers.contacts<br>Contacts functionality abnormal.</p></blockquote><blockquote><p>Calendar Storage: com.android.providers.calendar<br>Cannot create new events.</p></blockquote><blockquote><p>Keychain: com.android.keychain<br>Cannot access Security &amp; Privacy - More Security Settings.</p></blockquote><blockquote><p>Shell: com.android.shell<br>Cannot open LSP.</p></blockquote><blockquote><p>AR Emoji: com.samsung.android.aremoji<br>Call background not working.</p></blockquote><blockquote><p>Connectivity Overlay: com.samsung.android.ConnectivilyOverlay<br>Connectivity Ux Overlay: com.samsung.android.ConnectivityUxOverlay<br>Cannot connect to SPen.</p></blockquote><blockquote><p>Galaxy Editing Service: ccm.samsung.android.globulpostprocmgr<br>Camera app crashes.</p></blockquote><blockquote><p>Configuration Update: com.samsung.android.cidmanager<br>DiagMon Agent: com.sec.android.diagmonagent<br>Adreno Graphics Drivers: com.qualcomm.qti.gpudrivers.kalama.api33<br>SumeNNService: com.samsung.android.sume.nn.service<br>Abnormal battery drain.</p></blockquote>
+              </div>
+            </details>
+
+<h3 id="Installation-Guide"><a href="#Installation-Guide" class="headerlink" title="Installation Guide"></a>Installation Guide</h3><p>Lycan relies on the Samsung Knox SDK, but it cannot directly obtain Knox permissions. Since Splashtop-Add-on-Samsung shares the same package name as Lycan, the system treats them as the same application. The process works by first having Splashtop-Add-on-Samsung obtain and activate Knox permissions, then replacing it with Lycan, effectively transferring the activated Knox permissions.</p>
+<h4 id="Required-Tools-1"><a href="#Required-Tools-1" class="headerlink" title="Required Tools"></a><a class="link"   href="https://1drv.ms/f/c/faeb19ea3240a386/EsFDMom4zDxOl_B4deCiJ00BBrPno51SScWBg0dfJUdq6g" >Required Tools <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><ol>
+<li>Lycan APK</li>
+<li>Splashtop-Add-On-Samsung APK</li>
+<li>Sam Helper APK</li>
+<li>Island APK</li>
+</ol>
+<h4 id="Complete-Steps-1"><a href="#Complete-Steps-1" class="headerlink" title="Complete Steps"></a>Complete Steps</h4>
+  <div class="note p-4 mb-4 rounded-small red warning">
+    <p>Not compatible with some One UI 6.1 and later system versions. Due to enhanced Knox security levels in the October 2024 system update, it’s no longer possible to disable KLMS Agent version 1.2.14 via ADB. Therefore, Step 1 will fail, showing Failed to change state of package.</p>
+
+  </div>
+
+<blockquote>
+<ul>
+<li><em><strong>1. Enable Knox Permissions</strong></em></li>
+<li>Run the following command in Sam Helper:<br><code>pm enable com.samsung.klmsagent</code></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><em><strong>2. Activate Knox Permissions</strong></em></li>
+<li>Open Island and create a work profile.</li>
+<li>Open the system’s My Files app, tap on the Splashtop-Add-On-Samsung APK.</li>
+<li>Choose <strong>Work Profile</strong> as the installation target, not Personal.</li>
+<li>Select Island APK under the <strong>Work Profile</strong> and install.</li>
+<li>Launch Splashtop-Add-On-Samsung and follow prompts to activate Knox permissions.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><em><strong>3. Disable Knox Permissions</strong></em></li>
+<li>Run the following command in Sam Helper:<br>  <code>pm disable-user com.samsung.klmsagent</code></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><em><strong>4. Transfer Knox Permissions</strong></em></li>
+<li>Locate and open Island Settings on the home screen.</li>
+<li>Select Destroy permanently then choose DESTROY.</li>
+<li>Install Lycan and follow prompts to activate Knox permissions.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><em><strong>5. Restore Knox Permissions</strong></em></li>
+<li>Repeat Step 1, installation complete.</li>
+</ul>
+</blockquote>
+<h4 id="Common-Issues"><a href="#Common-Issues" class="headerlink" title="Common Issues"></a>Common Issues</h4><ol>
+<li>Can it be installed on One UI 6.1?<br> Not guaranteed. This guide only works for One UI 1.0 to some One UI 6.1 versions.</li>
+<li>How do I know if installation was successful?<br> All apps should be visible on the main page.</li>
+<li>Apps not showing on main page?<br> Simply restart your device.</li>
+<li>Activation failed with error 204&#x2F;301?<br> Try a clean uninstall and restart the process from the beginning.</li>
+<li>Splashtop-Add-on-Samsung activation failed with error 301?<br> Clear app data and grant all requested permissions.</li>
+<li>Can’t uninstall Splashtop-Add-on-Samsung?<br> Search for Device Admin Apps in Settings and revoke its authorization.</li>
+<li>“Package conflicts with existing package” error?<br> Ensure both Lycan and Splashtop-Add-on-Samsung are completely uninstalled (see installation principles above).</li>
+<li>Does it need to run in the background?<br> No, it doesn’t need to</li>
+<li>How to uninstall?<br> Click uninstall in the sidebar and choose “Don’t keep data.”</li>
+<li>Will it trigger Knox fuse or compromise system security?<br>No, it won’t have any such impacts.</li>
+<li>Should I enable all apps before system updates?<br>Not necessary. Testing shows no issues even with major updates.</li>
+</ol>
+<h3 id="Usage-Guide"><a href="#Usage-Guide" class="headerlink" title="Usage Guide"></a>Usage Guide</h3><p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/25.webp" alt="Lycan Usage Guide"></p>
+<ul>
+<li><strong>Disable Apps</strong>: Home - Tap app icon - Tap <code>Disable</code> or <code>Enable</code> at bottom left (use top right to select all)</li>
+<li><strong>Disable Components</strong>: Home - Tap app icon - Tap component icon - Tap <code>Disable</code> or <code>Enable</code> at bottom (use top right to select all)</li>
+<li><strong>Add to Favorites</strong>: Home - Tap app icon - Tap heart icon at bottom right - Choose default folder or create new</li>
+<li><strong>Import&#x2F;Export App Disable List</strong>: Home - Sidebar - Favorites - Three dots menu - Import&#x2F;Export</li>
+<li><strong>Import&#x2F;Export Component Disable List</strong>: Home - Sidebar - History - Three dots menu - Import&#x2F;Export</li>
+</ul>
+<h2 id="Adhell-3"><a href="#Adhell-3" class="headerlink" title="Adhell 3"></a>Adhell 3</h2>
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>This is an advanced chapter, which introduces the features and installation of the app Adhell 3.</p>
+
+  </div>
+
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/27en.webp" alt="Adhell 3"></p>
+<p>Adhell 3 is an application exclusively for Samsung devices. It was originally developed by Samsung developer FiendFyre but was later forced to be taken down. Subsequently, Adhell 2 was released but also ceased service after some time. It wasn’t until 2017 that Adhell 3 emerged.</p>
+<p>Its ad-blocking functionality relies on the Samsung Knox SDK, which is why it only works on Samsung devices. It acts as a front-end for the Samsung Knox SDK, writing your rule configurations (ad domains, firewall rules, whitelists) directly into Knox, eliminating the need for background processes. Adhell 3 offers four major functions.</p>
+<h3 id="Four-Functions"><a href="#Four-Functions" class="headerlink" title="Four Functions"></a>Four Functions</h3><ul>
+<li><strong>Domain rules</strong>: Implements ad blocking through host file subscriptions and local domain rules, effectively filtering ads across system components, including app splash screens, content feeds, and modal advertisements.</li>
+<li><strong>Firewall rules</strong>: Provides fine-grained control over cellular&#x2F;WiFi permissions and custom rule creation (e.g., <code>com.android.chrome|*|53</code> blocks Chrome’s DNS queries through port 53).</li>
+<li><strong>App disabler</strong>: Manages system application states and permissions.</li>
+<li><strong>App Component</strong>: Controls application components and permission frameworks.</li>
+</ul>
+<p>Note: Due to potential stability issues, it’s recommended to primarily utilize the Domain rules.</p>
+<h4 id="Common-Issues-1"><a href="#Common-Issues-1" class="headerlink" title="Common Issues"></a>Common Issues</h4><ol>
+<li>What is the scope of blocking?<br> System-wide ad blocking across all applications and services.</li>
+<li>Battery consumption concerns?<br> Adhell itself doesn’t consume battery as it doesn’t maintain background processes. Any unusual battery drain typically occurs when blocked ads continuously attempt to reload in the background.</li>
+<li>How does it differ from Adguard?<br> Adguard operates through a VPN tunnel, preventing simultaneous VPN usage. Adhell, utilizing Knox framework, doesn’t occupy the VPN slot, allowing concurrent VPN connections.</li>
+<li>Is Lycan still necessary with Adhell?<br> Yes. Adhell lacks batch operation capabilities, requiring manual configuration for each app. Lycan offers more efficient batch management features, making it the preferred choice for system modifications.</li>
+<li>Recommended host sources?<br>    <a class="link"   href="https://github.com/otobtc/ADhosts" >Ad hosts <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> <a class="link"   href="https://github.com/217heidai/adblockfilters" >AdBlock DNS Filters <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>Why do some ads still appear?<br> Complete ad elimination isn’t guaranteed. Blocking effectiveness depends on your subscribed host sources, which can’t possibly contain all ad domains in existence. Some ads inevitably slip through.</li>
+<li>Should I add as many rules as possible?<br> No. More rules increase rule processing time and network latency. Excessive rules can even cause device boot loops in some cases. We recommend maintaining a balanced, optimized ruleset.</li>
+</ol>
+<h3 id="Installation-Guide-1"><a href="#Installation-Guide-1" class="headerlink" title="Installation Guide"></a>Installation Guide</h3><p>Adhell 3 and Lycan share the same Knox SDK implementation foundation. The installation process follows the previously outlined Knox-based deployment methodology.</p>
+<h4 id="Required-Tools-2"><a href="#Required-Tools-2" class="headerlink" title="Required Tools"></a><a class="link"   href="https://1drv.ms/f/c/faeb19ea3240a386/EsFDMom4zDxOl_B4deCiJ00BBrPno51SScWBg0dfJUdq6g" >Required Tools <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h4><ol>
+<li>Adhell 3 APK</li>
+<li>NotifyRDS-Add-On-Samsung APK</li>
+<li>Sam Helper APK</li>
+<li>island APK</li>
+</ol>
+<h4 id="Complete-Steps-2"><a href="#Complete-Steps-2" class="headerlink" title="Complete Steps"></a>Complete Steps</h4>
+  <div class="note p-4 mb-4 rounded-small red warning">
+    <p>Not compatible with some One UI 6.1 and later system versions. Due to enhanced Knox security levels in the October 2024 system update, it’s no longer possible to disable KLMS Agent version 1.2.14 via ADB. Therefore, Step 1 will fail, showing Failed to change state of package.</p>
+
+  </div>
+
+<blockquote>
+<ul>
+<li><em><strong>1. Enable Knox Permissions</strong></em></li>
+<li>Run the following command in Sam Helper:<br><code>pm enable com.samsung.klmsagent</code></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><em><strong>2. Activate Knox Permissions</strong></em></li>
+<li>Open Island and create a work profile.</li>
+<li>Open the system’s My Files app, tap on the NotifyRDS-Add-On-Samsung APK.</li>
+<li>Choose <strong>Work Profile</strong> as the installation target, not Personal.</li>
+<li>Select Island APK under the <strong>Work Profile</strong> and install.</li>
+<li>Launch NotifyRDS-Add-On-Samsung and follow prompts to activate Knox permissions.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><em><strong>3. Disable Knox Permissions</strong></em></li>
+<li>Run the following command in Sam Helper:<br>  <code>pm disable-user com.samsung.klmsagent</code></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><em><strong>4. Transfer Knox Permissions</strong></em></li>
+<li>Locate and open Island Settings on the home screen.</li>
+<li>Select Destroy permanently then choose DESTROY.</li>
+<li>Install Lycan and follow prompts to activate Knox permissions.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><em><strong>5. Restore Knox Permissions</strong></em></li>
+<li>Repeat Step 1, installation complete.</li>
+</ul>
+</blockquote>
+<p>After granting permissions as prompted, entering the main page indicates successful activation. If you see a popup showing License Activation, it means activation has failed. You’ll need to start the process again from the beginning.</p>
+<h4 id="Important-Notes"><a href="#Important-Notes" class="headerlink" title="Important Notes"></a>Important Notes</h4><ol>
+<li>It is not recommended to enable firewall rules as this may prevent calls and SMS functionality, limiting the device to data-only internet access.</li>
+<li>Running Adhell and Clash simultaneously will cause network disconnection. <a class="link"   href="https://github.com/MetaCubeX/ClashMetaForAndroid" >Clash Meta <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> is recommended as an alternative solution.</li>
+<li>When domain rules are enabled, the device’s hotspot functionality will not work.</li>
+<li>Some domains, when blocked, will repeatedly attempt connections. It’s recommended to add such domains to the Whitelist in the Domains page to prevent abnormal battery drain.</li>
+<li>Avoid using App Whitelisting, as this will exponentially increase domain rule loading times. Each whitelisted app doubles the loading duration.</li>
+</ol>
+<h3 id="DNS-AdBlock"><a href="#DNS-AdBlock" class="headerlink" title="DNS AdBlock"></a>DNS AdBlock</h3><p>Adhell 3 has not been maintained since 2017 and has developed bugs following the One UI 6.0 upgrade, leading me to discontinue its use. However, there are other effective methods for ad blocking. </p>
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/28en.webp" alt="Adguard DNS"></p>
+<p>Register with <a class="link"   href="https://adguard-dns.io/" >Adguard DNS <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> and connect a new device by setting up the private DNS provider hostname as shown in the image. To enhance blocking effectiveness, you can add these blocking lists in AdGuard DNS server settings:</p>
+<ol>
+<li><code>AWAvenue Ads Rule</code></li>
+<li><code>1Hosts (Lite)</code></li>
+<li><code>HaGeZi&#39;s Normal Blocklist</code></li>
+<li><code>OISD Blocklist Small</code></li>
+<li><code>Steven Black&#39;s List</code></li>
+</ol>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/31en.webp" alt="Reddit Post"> </p>
+<p>This guide was originally written in Chinese seven months ago, and I hadn’t planned on creating an English version. However, when I recently discovered that someone had shared my article on Reddit and it received positive feedback, I realized this guide could potentially help more people beyond just those in China. That’s what motivated me to translate it into English, carefully reviewing and refining the content to create this complete English version of the One UI optimization guide. I really hope it can be helpful to all of you.</p>
+<p>While some Reddit users criticized my approach, suggesting I was turning the phone into a Nokia 3310, I find that quite amusing. Everything I’ve recommended is about improving battery life and performance without sacrificing user experience. Notice how I never suggested switching to 60Hz or HD+. I genuinely enjoy tinkering and exploring phones, and simply sharing my experiences with those who might find it useful. If you disagree with my approach, that’s totally fine, but please don’t mock it.</p>
+<p><img loading="lazy" src="https://image.radishzz.cc/image/01-oneui/01.webp" alt="One UI"> </p>
+<p>About the main point of this guide: improving your device’s battery life and performance doesn’t actually require all these fancy tweaks. If you’re a tech enthusiast who enjoys optimizing devices, by all means, go through all the steps. But for most people, day-to-day usability is what matters most, and honestly, many of these optimizations go beyond what’s necessary. You can usually achieve great battery life and smooth performance just by following the App Installation and System Settings chapters. There’s no need to get too caught up in disabling features and such. The benefits become marginal at that point.</p>
+<p>Finally, let me rank the six chapters by their effectiveness in improving battery life and smoothness:<br><strong>System Settings &gt; App Installation &gt; The Wiping and Flashing &gt; Shizuku ≈ Lycan &gt; Adhell 3</strong></p>
+
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>If you like the guide, feel free to buy me a coffee. I’ll be happy to answer any questions for you.</p>
+
+  </div>
+
+<details class="gray" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Donate </summary>
+              <div class='content'>
+              <div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">PayPal</a></li><li class="tab"><a class="#first-unique-name-2">Alipay</a></li><li class="tab"><a class="#first-unique-name-3">Wechat</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><img loading="lazy" src="https://image.radishzz.cc/image/qrcode-paypal.webp" alt="qrcode-paypal"></p></div><div class="tab-pane" id="first-unique-name-2"><p><img loading="lazy" src="https://image.radishzz.cc/image/qrcode-alipay.webp" alt="qrcode-alipay"></p></div><div class="tab-pane" id="first-unique-name-3"><p><img loading="lazy" src="https://image.radishzz.cc/image/qrcode-wechat.webp" alt="qrcode-wechat"></p></div></div></div>
+              </div>
+            </details>
+]]></content>
+      <categories>
+        <category>en</category>
+        <category>Tutorials</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+        <tag>Samsung</tag>
+        <tag>One UI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>「入土级」 三星 One UI 优化完全指南</title>
     <url>/posts/384776b2/</url>
     <content><![CDATA[
