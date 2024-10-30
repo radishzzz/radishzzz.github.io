@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>http://radishzz.cc/posts/d88c9984/</loc>
-    
-    <lastmod>2024-10-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://radishzz.cc/masonry/index.html</loc>
     
     <lastmod>2024-10-17</lastmod>
@@ -104,21 +95,7 @@
   </url>
   
   <url>
-    <loc>http://radishzz.cc/categories/en/</loc>
-    <lastmod>2024-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://radishzz.cc/categories/zh/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://radishzz.cc/categories/en/Tutorials/</loc>
     <lastmod>2024-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
