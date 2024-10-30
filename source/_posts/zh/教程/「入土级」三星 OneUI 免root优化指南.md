@@ -18,6 +18,10 @@ excerpt: 一份指南，带你从入门到入土。
 ---
 
 {% note info  %}
+<i class="fa-solid fa-earth-americas mr-2"></i>本文亦提供以下语言版本: [English](../../posts/d88c9984/)
+{% endnote %}
+
+{% note info  %}
 <i class="fa-solid fa-circle-info mr-2"></i>移动端开启桌面版网站即可查看目录
 {% endnote %}
 
@@ -152,6 +156,7 @@ excerpt: 一份指南，带你从入门到入土。
 
 4. **通知**
 > - 应用程序通知（按需开启）
+> - 高级设置-管理每个应用程序的通知类别（开启）
 
 5. **显示**
 > - 黑暗模式（按需开启）
@@ -381,18 +386,14 @@ One UI 在省电模式下，默认无法开启 120Hz。如果你想同时拥有�
 > 1. 点击主页右上角的第二个图标，进入 Shizuku 终端
 > 2. 输入禁用指令并执行即可（两条指令要分开执行）
       `pm disable-user com.wssyncmldm`
-      `pm disable-user com.sec.android.app`
+      `pm disable-user com.sec.android.soagent`
 > 3. 如果想恢复系统更新，执行以下解禁指令即可。
       `pm enable com.wssyncmldm`
-      `pm enable com.sec.android.app`
+      `pm enable com.sec.android.soagent`
 
 #### [Battery Guru](https://liteapks.com/battery-guru.html)
 
 ![Battery Guru](https://image.radishzz.cc/image/01-oneui/11.webp)
-
-{% note  %}
-图中是旧版软件界面，跟新版不太一样
-{% endnote %}
 
 电池专家，一款电池健康管理工具。它提供了多种功能，例如实时电流检测、电池容量估算、应用耗电情况等，来帮助用户监控和管理电池的使用情况，从而延长电池寿命。
 
@@ -408,16 +409,13 @@ One UI 在省电模式下，默认无法开启 120Hz。如果你想同时拥有�
 >     `pm grant com.paget96.batteryguru android.permission.PACKAGE_USAGE_STATS`
 >     `pm grant com.paget96.batteryguru android.permission.WRITE_SECURE_SETTINGS`
 >     `pm grant com.paget96.batteryguru android.permission.DUMP`
-> 3. 应用主页-底栏第四个选项-省电页面
-> 4. 配置-Doze 优化、重新应用 Doze 参数、等待解锁（开启）
+> 3. 应用主页-最底下的工具栏-系统省电模式-配置
+> 4. Doze 优化、重新应用 Doze 参数、等待解锁（开启）
 
 ![省电模式配置](https://image.radishzz.cc/image/01-oneui/13.webp)
 
-> 5. 省电页面-启用系统省电程序、广播节能程序、快速 Doze、显示过渡动画、强制检查后台程序、启用振动、启用可选传感器（开启）
-> 6. 仅在屏幕时开启、夜间模式、亮度调节（按需开启）
-> 7. 低于以下电量开启系统省电（50%）
-> 8. 高于以下电量禁用系统省电（100%）
-> 9. 应用需要保持在后台运行，请参考系统设置篇，设置完毕
+> 5. 如图进行设置
+> 6. 应用需要保持在后台运行，请参考系统设置篇的步骤22
 
 #### [App Ops](https://appops.rikka.app/)
 
@@ -578,192 +576,192 @@ Lycan 是一款专属于三星设备的应用，中文翻译为狼人，搭配�
 因此最好是参考别人的禁用方案，再根据自己的需求进行调整。例如有些人需要 Google 服务，有些人则不需要。我这里提供两个自用的禁用方案：[基础禁用列表](https://www.123865.com/s/2xiAjv-AwzPh)、[极限禁用列表](https://www.123865.com/s/2xiAjv-39qPh)，请根据自己的需求进行调整。
 
 {% folding white::禁用故障对照列表 %}
-> Apps　com.samsung.android.app.appsedge  
-> 无法使用分屏多任务。
+> Apps　com.samsung.android.app.appsedge
+> 无法使用分屏多任务
 
-> 启动器　com.sec.android.emergencylauncher  
-> 无法使用省电模式。
+> 启动器　com.sec.android.emergencylauncher
+> 无法使用省电模式
 
-> 音质与音效　com.sec.android.app.soundalive  
-> 无法开启全局杜比音效。
+> 音质与音效　com.sec.android.app.soundalive
+> 无法开启全局杜比音效
 
-> Samsung Core Services　com.samsung.android.scs  
-> 侧栏矩形截图，无法自动识别选择图片。联系人无法搜索，无法自选截图。
+> Samsung Core Services　com.samsung.android.scs
+> 侧栏矩形截图，无法自动识别选择图片。联系人无法搜索，无法自选截图
 
-> Samsung Multi Connectivity　com.samsung.android.mcfserver  
-> 无法使用多重连接，耳机无法随意切换。
+> Samsung Multi Connectivity　com.samsung.android.mcfserver
+> 无法使用多重连接，耳机无法随意切换
 
-> Tethering　com.google.android.networkstack.tethering  
-> 打开软件点击无响应，设置-连接闪退。
+> Tethering　com.google.android.networkstack.tethering
+> 打开软件点击无响应，设置-连接闪退
 
-> Samsung Device Health Manager Service　com.sec.android.sdhms  
-> 打开三星设备健康闪退。
+> Samsung Device Health Manager Service　com.sec.android.sdhms
+> 打开三星设备健康闪退
 
-> Settings Bixby　com.samsung.android.app.settings.bixby  
-> 无法使用三星云恢复备份。
+> Settings Bixby　com.samsung.android.app.settings.bixby
+> 无法使用三星云恢复备份
 
-> Factory Test Provider　com.samsung.android.app.providers.factory  
-> 无法使用*#0*#。
+> Factory Test Provider　com.samsung.android.app.providers.factory
+> 无法使用 *#0*#。
 
-> SumeNNService　com.samsung.android.sume.nn.service  
-> Photo Remaster Service　com.samsung.android.photoremasterservice  
-> 无法使用相册的重录。
+> SumeNNService　com.samsung.android.sume.nn.service
+> Photo Remaster Service　com.samsung.android.photoremasterservice
+> 无法使用相册的重录
 
-> DRParser Mode　com.sec.android.app.parser  
-> 无法使用相册重录，无法使用*#0*#。
+> DRParser Mode　com.sec.android.app.parser
+> 无法使用相册重录，无法使用 *#0*#
 
-> Service Mode　com.sec.android.app.servicemodeapp  
-> 无法使用*#06#。
+> Service Mode　com.sec.android.app.servicemodeapp
+> 无法使用 *#06#
 
-> Sec Media Storage　com.samsung.android.providers.media  
-> 无法截图，显示由于安全政策无法截取。
+> Sec Media Storage　com.samsung.android.providers.media
+> 无法截图，显示由于安全政策无法截取
 
-> 网络管理器　com.google.android.networkstack  
-> 无法使用移动网络。
+> 网络管理器　com.google.android.networkstack
+> 无法使用移动网络
 
-> VPN Dialogs　com.android.vpndialogs  
-> 无法使用 VPN。
+> VPN Dialogs　com.android.vpndialogs
+> 无法使用 VPN
 
-> 媒体　com.google.android.providers.media.module  
-> 无法访问文件，内存里的文件。
+> 媒体　com.google.android.providers.media.module
+> 无法访问文件，内存里的文件
 
-> Key Chain　com.android.keychain  
-> 无法打开安全与隐私-其他安全设置。
+> Key Chain　com.android.keychain
+> 无法打开安全与隐私-其他安全设置
 
-> Sec Soter Service　com.tencent.soter.soterserver  
-> 微信无法使用，无法截图，无法录制视频。
+> Sec Soter Service　com.tencent.soter.soterserver
+> 微信无法使用，无法截图，无法录制视频
 
-> 输入设备　com.android.inputdevices  
-> 屏幕采样率下降，触控不跟手。
+> 输入设备　com.android.inputdevices
+> 屏幕采样率下降，触控不跟手
 
-> WLAN Test　com.sec.android.app.wlantest  
-> WiFi无法重连。
+> WLAN Test　com.sec.android.app.wlantest
+> WiFi 无法重连
 
-> 强制门户登陆　com.google.android.captiveportallogin  
-> 无法登陆Wi-Fi。
+> 强制门户登陆　com.google.android.captiveportallogin
+> 无法登陆 Wi-Fi
 
-> Global Post ProcMgr　com.samsung.android.globalpostprocmgr  
-> 拍照后相机打开预览图异常。
+> Global Post ProcMgr　com.samsung.android.globalpostprocmgr
+> 拍照后相机打开预览图异常
 
-> Tx Pwr Admin　vendor.qti.data.txpwradmin  
-> 快充失效。
+> Tx Pwr Admin　vendor.qti.data.txpwradmin
+> 快充失效
 
-> 生物识别　com.samsung.android.biometrics.app.setting  
-> 无法录入指纹。
+> 生物识别　com.samsung.android.biometrics.app.setting
+> 无法录入指纹
 
-> 通话设置　com.samsung.android.app.telephonyui  
-> 无法在状态栏切换sim卡和流量，设置里无法显示移动网络选项。
+> 通话设置　com.samsung.android.app.telephonyui
+> 无法在状态栏切换sim卡和流量，设置里无法显示移动网络选项
 
-> Ifaa Manager Application　org.ifaa.aidl.manager  
-> 无法使用支付宝指纹支付。
+> Ifaa Manager Application　org.ifaa.aidl.manager
+> 无法使用支付宝指纹支付
 
-> Sec Video Engine Service　com.sec.sve  
-> 语音通话无法唤起摄像头，从而导致卡省电120失败。
+> Sec Video Engine Service　com.sec.sve
+> 语音通话无法唤起摄像头，从而导致卡省电120失败
 
-> CMH Provider　com.samsung.cmh  
-> 相片重录完成保存时闪退。
+> CMH Provider　com.samsung.cmh
+> 相片重录完成保存时闪退
 
-> Badge Provider　com.sec.android.provider.badge  
-> 短信无法显示小红点。
+> Badge Provider　com.sec.android.provider.badge
+> 短信无法显示小红点
 
-> 三星键盘　com.samsung.android.honeyboard  
-> 侧屏幕的剪切板无法使用。
+> 三星键盘　com.samsung.android.honeyboard
+> 侧屏幕的剪切板无法使用
 
-> Call BG Provider　com.samsung.android.callbgprovider  
-> 无通话背景。
+> Call BG Provider　com.samsung.android.callbgprovider
+> 无通话背景
 
-> Intent Resolver　com.android.intentresolver  
-> 分享闪退。
+> Intent Resolver　com.android.intentresolver
+> 分享闪退
 
-> 三星文字转语音引擎　com.samsung.SMT  
-> 手字笔输入无效。
+> 三星文字转语音引擎　com.samsung.SMT
+> 手字笔输入无效
 
-> 设置建议　com.android.settings.intelligence  
-> 无法使用电池小组件。
+> 设置建议　com.android.settings.intelligence
+> 无法使用电池小组件
 
-> Always On Display　com.samsung.android.app.aodservice  
-> 无法使用息屏提醒。
+> Always On Display　com.samsung.android.app.aodservice
+> 无法使用息屏提醒
 
-> Container Service　com.samsung.android.container  
-> 蓝牙设置里，切换耳机降噪环境音功能消失。
+> Container Service　com.samsung.android.container
+> 蓝牙设置里，切换耳机降噪环境音功能消失
 
-> Cell Broadcast Service　com.google.android.cellbroadcastservice  
-> 无法发送彩信，提示网络错误。
+> Cell Broadcast Service　com.google.android.cellbroadcastservice
+> 无法发送彩信，提示网络错误
 
-> Sticker Center　com.samsung.android.stickercenter  
-> 相册编辑器闪退。
+> Sticker Center　com.samsung.android.stickercenter
+> 相册编辑器闪退
 
-> Handwriting Service　com.samsung.android.sdk.handwriting  
-> SPen无法写字输入。
+> Handwriting Service　com.samsung.android.sdk.handwriting
+> SPen无法写字输入
 
-> 三星文字转语音引擎　com.samsung.SMT  
-> 无法使用语音转文字。
+> 三星文字转语音引擎　com.samsung.SMT
+> 无法使用语音转文字
 
-> Factory Camera　com.sec.factory.camera  
-> Filter Provider　com.samsung.android.provider.filterprovider  
-> 相机滤镜的选择和添加异常。
+> Factory Camera　com.sec.factory.camera
+> Filter Provider　com.samsung.android.provider.filterprovider
+> 相机滤镜的选择和添加异常
 
-> Secure Element Application　com.android.se  
-> 钱包内公交卡余额相关异常。
+> Secure Element Application　com.android.se
+> 钱包内公交卡余额相关异常
 
-> App Linker　com.sec.android.app.applinker  
-> 角标失效。
+> App Linker　com.sec.android.app.applinker
+> 角标失效
 
-> TxPwrAdmin　vendor.qti.data.txpwradmin  
-> 快充失效。
+> TxPwrAdmin　vendor.qti.data.txpwradmin
+> 快充失效
 
-> Soter Sskds Service　com.samsung.android.sskds  
-> 微信无法开启指纹支付。
+> Soter Sskds Service　com.samsung.android.sskds
+> 微信无法开启指纹支付
 
-> Spritewallipaper　com.samsung.android.wallpaper.live  
-> 桌面动态壁纸失效。
+> Spritewallipaper　com.samsung.android.wallpaper.live
+> 桌面动态壁纸失效
 
-> Samsung Editing Assets　com.sec.android.app.ve.vebgm  
-> 相册故事没声音。
+> Samsung Editing Assets　com.sec.android.app.ve.vebgm
+> 相册故事没声音
 
-> 配套设备管理器　com.android.companiondevicemanager  
-> 重新连接手表异常。
+> 配套设备管理器　com.android.companiondevicemanager
+> 重新连接手表异常
 
-> 壁纸服务　com.samsung.android.dynamicock  
-> 锁屏状态下无法直接显示内容。
+> 壁纸服务　com.samsung.android.dynamicock
+> 锁屏状态下无法直接显示内容
 
-> Android Shared Library　com.google.android.ext.shared  
-> 智能建议　com.samsung.android.smartsuggestions  
-> 无法自动识别并选定网址。
+> Android Shared Library　com.google.android.ext.shared
+> 智能建议　com.samsung.android.smartsuggestions
+> 无法自动识别并选定网址
 
-> Bluetooth Pairing Request　com.android.settings.bluetooth.BluetoothPairingRequest  
-> 无法显示配对耳机弹窗。
+> Bluetooth Pairing Request　com.android.settings.bluetooth.BluetoothPairingRequest
+> 无法显示配对耳机弹窗
 
-> Continuity Service　com.samsung.android.mcfds  
+> Continuity Service　com.samsung.android.mcfds
 > 无法使用多屏联动
 
-> 联系人存储　com.samsung.android.providers.contacts  
-> 联系人功能异常。
+> 联系人存储　com.samsung.android.providers.contacts
+> 联系人功能异常
 
-> 日历存储　com.android.providers.calendar  
-> 无法创建新事件。
+> 日历存储　com.android.providers.calendar
+> 无法创建新事件
 
-> 密钥链　com.android.keychain  
-> 无法打开安全与隐私-更多安全设置。
+> 密钥链　com.android.keychain
+> 无法打开安全与隐私-更多安全设置
 
-> Shell　com.android.shell  
-> 无法打开LSP。
+> Shell　com.android.shell
+> 无法打开LSP
 
-> 动态萌拍　com.samsung.android.aremoji  
-> 通话背景失效。
+> 动态萌拍　com.samsung.android.aremoji
+> 通话背景失效
 
-> Connectivity Overlay　com.samsung.android.ConnectivilyOverlay  
-> Connectivity Ux Overlay　com.samsung.android.ConnectivityUxOverlay  
-> 无法连接 Spen。
+> Connectivity Overlay　com.samsung.android.ConnectivilyOverlay
+> Connectivity Ux Overlay　com.samsung.android.ConnectivityUxOverlay
+> 无法连接 Spen
 
-> Galaxy Editing Service　ccm.samsung.android.globulpostprocmgr  
-> 相机闪退。
+> Galaxy Editing Service　ccm.samsung.android.globulpostprocmgr
+> 相机闪退
 
-> 配置更新　com.samsung.android.cidmanager  
-> DiagMon Agent　com.sec.android.diagmonagent  
-> Adreno Graphics Drivers　com.qualcomm.qti.gpudrivers.kalama.api33  
-> SumeNNService　com.samsung.android.sume.nn.service  
-> 耗电异常。
+> 配置更新　com.samsung.android.cidmanager
+> DiagMon Agent　com.sec.android.diagmonagent
+> Adreno Graphics Drivers　com.qualcomm.qti.gpudrivers.kalama.api33
+> SumeNNService　com.samsung.android.sume.nn.service
+> 耗电异常
 
 *列表来自酷安 @罗密欧与猪过夜*
 {% endfolding %}
@@ -860,9 +858,7 @@ Lycan 是利用 Samsung Knox SDK 进行工作的，但它无法直接获取 Knox
 
 Adhell 3 也是一款专属于三星设备的应用，中文翻译为广告地狱，顾名思义其主打功能为去广告。它最初是由三星开发者 FiendFyre 开发，后因一些原因被迫下架。随后推出了 Adhell 2，但在一段时间后也停止了服务。直到 2017 年 Adhell 3 才出现。
 
-它的工作原理是利用 Samsung Knox SDK 阻止广告域名，因此它只适用于三星设备。它是 Samsung Knox SDK 的一个前端，会把你的规则设定（广告域名、防火墙规则、白名单）写入 Knox，因此它不需要在后台运行。
-
-Adhell 3 共有四大功能，分别是域规则、防火墙规则、应用管理器和组件管理器。除了拦截广告，Adhell 3 还可以限制应用的联网权限、禁用应用程序和应用组件、自定义防火墙规则，从而拦截特定应用程序的指定端口等。
+它的工作原理是利用 Samsung Knox SDK 阻止广告域名，因此它只适用于三星设备。它是 Samsung Knox SDK 的一个前端，会把你的规则设定（广告域名、防火墙规则、白名单）写入 Knox，因此它不需要在后台运行。Adhell 3 共有以下四大功能。
 
 ### 四大功能
 
@@ -995,6 +991,9 @@ Adhell 3 从 2017 年至今已经年久失修，在 One UI 升级到 6.0 后又�
 <!-- endtab -->
 <!-- tab 支付宝-->
 ![qrcode-alipay](https://image.radishzz.cc/image/qrcode-alipay.webp)
+<!-- endtab -->
+<!-- tab PayPal-->
+![qrcode-paypal](https://image.radishzz.cc/image/qrcode-paypal.webp)
 <!-- endtab -->
 {% endtabs %}
 {% endfolding %}
