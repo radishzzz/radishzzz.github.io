@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hello-world.md",
+                "file": "en/Tutorials/Ultimate Samsung One UI Optimization Guide - No Root Required.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "hello-world"
+              "title": "Ultimate Samsung One UI Optimization Guide - No Root Required"
             }
           }
         ]
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "fa6907c0821b3d44",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zh/教程/「入土级」三星 OneUI 免root优化指南.md",
+                "file": "en/Tutorials/Ultimate Samsung One UI Optimization Guide - No Root Required.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "「入土级」三星 OneUI 免root优化指南 的反向链接列表"
+              "title": "Ultimate Samsung One UI Optimization Guide - No Root Required 的反向链接列表"
             }
           },
           {
@@ -139,18 +140,18 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zh/教程/「入土级」三星 OneUI 免root优化指南.md"
+                "file": "en/Tutorials/Ultimate Samsung One UI Optimization Guide - No Root Required.md"
               },
               "icon": "lucide-list",
-              "title": "「入土级」三星 OneUI 免root优化指南 的大纲"
+              "title": "Ultimate Samsung One UI Optimization Guide - No Root Required 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,9 +163,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d0e643f03ba1956e",
+  "active": "506e101ccb710732",
   "lastOpenFiles": [
     "zh/教程/「入土级」三星 OneUI 免root优化指南.md",
+    "en/Tutorials/Ultimate Samsung One UI Optimization Guide - No Root Required.md",
     "hello-world.md"
   ]
 }
